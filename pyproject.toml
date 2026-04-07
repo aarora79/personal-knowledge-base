@@ -1,0 +1,14 @@
+[project]
+name = "personal-knowledge-base"
+version = "0.1.0"
+description = "LLM-maintained personal knowledge base for Generative AI"
+requires-python = ">=3.11"
+dependencies = [
+    "trafilatura>=2.0.0",
+    "markitdown[all]>=0.1.0",
+]
+
+[dependency-groups]
+dev = [
+    "ruff>=0.1.0",
+]
