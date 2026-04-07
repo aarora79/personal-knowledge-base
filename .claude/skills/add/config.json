@@ -1,0 +1,8 @@
+{
+  "depth_level": 500,
+  "depth_options": {
+    "100": "Explain like I'm 12 (Feynman technique, analogies, no jargon)",
+    "300": "College level (technical but accessible, assumes some background)",
+    "500": "Expert deep-dive (full technical detail, assumes domain expertise)"
+  }
+}

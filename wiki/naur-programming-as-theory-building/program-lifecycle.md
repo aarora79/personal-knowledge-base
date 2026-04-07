@@ -3,7 +3,8 @@ title: Program Lifecycle (Life, Death, and Revival)
 created: 2026-04-07
 updated: 2026-04-07
 sources: [raw/20260407-pablorauzyname-dev-naur1985programmingpdf.md]
-related: [[programming-as-theory-building]], [[tacit-knowledge-in-software]], [[software-modification-challenges]]
+related: [programming-as-theory-building](programming-as-theory-building.md), [tacit-knowledge-in-software](tacit-knowledge-in-software.md), [software-modification-challenges](software-modification-challenges.md)
+tags: [program-lifecycle, team-continuity, knowledge-transfer, program-death, software-engineering-philosophy]
 ---
 
 # Program Lifecycle (Life, Death, and Revival)
@@ -33,9 +34,9 @@ For the extended life of a program, new programmers must work in close contact w
 - Similar challenges arise even in continuously maintained programs as team members are replaced
 
 ## Related Concepts
-- [[programming-as-theory-building]] - The foundational view that defines this lifecycle framework
-- [[tacit-knowledge-in-software]] - The kind of knowledge whose loss causes program death
-- [[software-modification-challenges]] - Dead programs accumulate incoherent modifications
+- [Programming as Theory Building](programming-as-theory-building.md) - The foundational view that defines this lifecycle framework
+- [Tacit Knowledge in Software](tacit-knowledge-in-software.md) - The kind of knowledge whose loss causes program death
+- [Software Modification Challenges](software-modification-challenges.md) - Dead programs accumulate incoherent modifications
 
 ## Sources
 - raw/20260407-pablorauzyname-dev-naur1985programmingpdf.md - Naur's original formulation of program life, death, and revival, including the recommendation to discard dead programs rather than attempt revival

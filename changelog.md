@@ -7,6 +7,11 @@
 - Created clip.sh helper script for URL ingestion (supports trafilatura and markitdown)
 - Source of bookmarks: gu-dsan6725/bookmarks GitHub repo
 
+## [2026-04-07] ingest | IETF Agent Name Service (ANS) Draft
+- Processed: raw/20260407-ietf-draft-narajala-ans.md
+- Created: wiki/agent-name-service.md, wiki/agent-communication-protocols.md, wiki/agent-discovery.md, wiki/agent-identity-and-trust.md, wiki/maestro-threat-framework.md
+- Updated: wiki/index.md (added 5 articles under AI Agents, total articles: 10)
+
 ## [2026-04-07] ingest | Peter Naur - Programming as Theory Building (1985)
 - Processed: raw/20260407-pablorauzyname-dev-naur1985programmingpdf.md
 - Created: wiki/programming-as-theory-building.md, wiki/tacit-knowledge-in-software.md, wiki/program-lifecycle.md, wiki/software-modification-challenges.md, wiki/metaphor-driven-design.md

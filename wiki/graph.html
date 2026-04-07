@@ -1,0 +1,724 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Knowledge Base Graph</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    background: #0d1117;
+    color: #c9d1d9;
+    overflow: hidden;
+  }
+
+  #controls {
+    position: fixed;
+    top: 16px;
+    left: 16px;
+    z-index: 10;
+    background: #161b22;
+    border: 1px solid #30363d;
+    border-radius: 8px;
+    padding: 16px;
+    max-width: 280px;
+  }
+
+  #controls h2 {
+    font-size: 14px;
+    margin-bottom: 12px;
+    color: #f0f6fc;
+  }
+
+  #controls label {
+    display: block;
+    font-size: 12px;
+    margin-bottom: 4px;
+    color: #8b949e;
+  }
+
+  #controls select, #controls input {
+    width: 100%;
+    padding: 6px 8px;
+    margin-bottom: 10px;
+    background: #0d1117;
+    border: 1px solid #30363d;
+    border-radius: 4px;
+    color: #c9d1d9;
+    font-size: 12px;
+  }
+
+  .legend {
+    margin-top: 12px;
+    font-size: 11px;
+  }
+
+  .legend-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 4px;
+  }
+
+  .legend-dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    margin-right: 8px;
+    flex-shrink: 0;
+  }
+
+  #tooltip {
+    position: fixed;
+    background: #161b22;
+    border: 1px solid #30363d;
+    border-radius: 6px;
+    padding: 10px 14px;
+    font-size: 12px;
+    pointer-events: none;
+    opacity: 0;
+    transition: opacity 0.15s;
+    max-width: 300px;
+    z-index: 20;
+  }
+
+  #tooltip .title {
+    font-weight: 600;
+    color: #f0f6fc;
+    margin-bottom: 4px;
+  }
+
+  #tooltip .tags {
+    color: #8b949e;
+    margin-top: 4px;
+  }
+
+  #tooltip .tag {
+    display: inline-block;
+    background: #1f2937;
+    border-radius: 3px;
+    padding: 1px 6px;
+    margin: 2px 2px 2px 0;
+    font-size: 10px;
+    color: #79c0ff;
+  }
+
+  #stats {
+    position: fixed;
+    bottom: 16px;
+    left: 16px;
+    font-size: 11px;
+    color: #484f58;
+    z-index: 10;
+  }
+</style>
+</head>
+<body>
+
+<div id="controls">
+  <h2>Knowledge Graph</h2>
+
+  <label for="filter-folder">Source folder</label>
+  <select id="filter-folder">
+    <option value="all">All folders</option>
+  </select>
+
+  <label for="filter-tag">Tag</label>
+  <select id="filter-tag">
+    <option value="all">All tags</option>
+  </select>
+
+  <label for="edge-type">Edge type</label>
+  <select id="edge-type">
+    <option value="all">All edges</option>
+    <option value="related">Related only</option>
+    <option value="source">Source only</option>
+  </select>
+
+  <div class="legend">
+    <div class="legend-item"><div class="legend-dot" style="background:#f78166"></div> Article</div>
+    <div class="legend-item"><div class="legend-dot" style="background:#3fb950"></div> Summary</div>
+    <div class="legend-item"><div class="legend-dot" style="background:#30363d; border:1px dashed #484f58"></div> Filtered out</div>
+  </div>
+</div>
+
+<div id="tooltip">
+  <div class="title"></div>
+  <div class="folder"></div>
+  <div class="tags"></div>
+</div>
+
+<div id="stats"></div>
+
+<svg id="graph"></svg>
+
+<script src="https://d3js.org/d3.v7.min.js"></script>
+<script>
+(function() {
+  const data = {
+  "nodes": [
+    {
+      "id": "ietf-draft-narajala-ans/agent-communication-protocols",
+      "title": "Agent Communication Protocols",
+      "file": "wiki/ietf-draft-narajala-ans/agent-communication-protocols.md",
+      "tags": [
+        "a2a",
+        "mcp",
+        "acp",
+        "agent-protocols",
+        "interoperability",
+        "ai-agents",
+        "multi-agent-systems"
+      ],
+      "source_folder": "ietf-draft-narajala-ans",
+      "type": "article"
+    },
+    {
+      "id": "ietf-draft-narajala-ans/agent-discovery",
+      "title": "Agent Discovery",
+      "file": "wiki/ietf-draft-narajala-ans/agent-discovery.md",
+      "tags": [
+        "agent-discovery",
+        "service-discovery",
+        "dns",
+        "capability-matching",
+        "ai-agents",
+        "multi-agent-systems"
+      ],
+      "source_folder": "ietf-draft-narajala-ans",
+      "type": "article"
+    },
+    {
+      "id": "ietf-draft-narajala-ans/agent-identity-and-trust",
+      "title": "Agent Identity and Trust",
+      "file": "wiki/ietf-draft-narajala-ans/agent-identity-and-trust.md",
+      "tags": [
+        "pki",
+        "x509",
+        "zero-knowledge-proofs",
+        "oauth",
+        "mtls",
+        "agent-identity",
+        "ai-agents",
+        "multi-agent-systems"
+      ],
+      "source_folder": "ietf-draft-narajala-ans",
+      "type": "article"
+    },
+    {
+      "id": "ietf-draft-narajala-ans/agent-name-service",
+      "title": "Agent Name Service (ANS)",
+      "file": "wiki/ietf-draft-narajala-ans/agent-name-service.md",
+      "tags": [
+        "agent-name-service",
+        "dns",
+        "pki",
+        "capability-discovery",
+        "ietf",
+        "ai-agents",
+        "multi-agent-systems"
+      ],
+      "source_folder": "ietf-draft-narajala-ans",
+      "type": "article"
+    },
+    {
+      "id": "ietf-draft-narajala-ans/maestro-threat-framework",
+      "title": "MAESTRO Threat Framework",
+      "file": "wiki/ietf-draft-narajala-ans/maestro-threat-framework.md",
+      "tags": [
+        "maestro",
+        "owasp",
+        "threat-modeling",
+        "agent-security",
+        "impersonation",
+        "ai-agents",
+        "multi-agent-systems"
+      ],
+      "source_folder": "ietf-draft-narajala-ans",
+      "type": "article"
+    },
+    {
+      "id": "ietf-draft-narajala-ans/summary-ietf-draft-narajala-ans",
+      "title": "Source Summary: Agent Name Service (ANS) IETF Draft",
+      "file": "wiki/ietf-draft-narajala-ans/summary-ietf-draft-narajala-ans.md",
+      "tags": [],
+      "source_folder": "ietf-draft-narajala-ans",
+      "type": "summary"
+    },
+    {
+      "id": "naur-programming-as-theory-building/metaphor-driven-design",
+      "title": "Metaphor-Driven Design",
+      "file": "wiki/naur-programming-as-theory-building/metaphor-driven-design.md",
+      "tags": [
+        "metaphor",
+        "design-communication",
+        "extreme-programming",
+        "team-alignment",
+        "clean-code",
+        "software-engineering-philosophy"
+      ],
+      "source_folder": "naur-programming-as-theory-building",
+      "type": "article"
+    },
+    {
+      "id": "naur-programming-as-theory-building/program-lifecycle",
+      "title": "Program Lifecycle (Life, Death, and Revival)",
+      "file": "wiki/naur-programming-as-theory-building/program-lifecycle.md",
+      "tags": [
+        "program-lifecycle",
+        "team-continuity",
+        "knowledge-transfer",
+        "program-death",
+        "software-engineering-philosophy"
+      ],
+      "source_folder": "naur-programming-as-theory-building",
+      "type": "article"
+    },
+    {
+      "id": "naur-programming-as-theory-building/programming-as-theory-building",
+      "title": "Programming as Theory Building",
+      "file": "wiki/naur-programming-as-theory-building/programming-as-theory-building.md",
+      "tags": [
+        "theory-building",
+        "peter-naur",
+        "gilbert-ryle",
+        "tacit-knowledge",
+        "software-engineering-philosophy",
+        "programming-methodology"
+      ],
+      "source_folder": "naur-programming-as-theory-building",
+      "type": "article"
+    },
+    {
+      "id": "naur-programming-as-theory-building/software-modification-challenges",
+      "title": "Software Modification Challenges",
+      "file": "wiki/naur-programming-as-theory-building/software-modification-challenges.md",
+      "tags": [
+        "software-modification",
+        "technical-debt",
+        "structural-decay",
+        "code-maintenance",
+        "software-engineering-philosophy"
+      ],
+      "source_folder": "naur-programming-as-theory-building",
+      "type": "article"
+    },
+    {
+      "id": "naur-programming-as-theory-building/summary-naur-programming-as-theory-building",
+      "title": "Source Summary: Programming as Theory Building (Peter Naur, 1985)",
+      "file": "wiki/naur-programming-as-theory-building/summary-naur-programming-as-theory-building.md",
+      "tags": [],
+      "source_folder": "naur-programming-as-theory-building",
+      "type": "summary"
+    },
+    {
+      "id": "naur-programming-as-theory-building/tacit-knowledge-in-software",
+      "title": "Tacit Knowledge in Software Development",
+      "file": "wiki/naur-programming-as-theory-building/tacit-knowledge-in-software.md",
+      "tags": [
+        "tacit-knowledge",
+        "epistemology",
+        "gilbert-ryle",
+        "knowledge-transfer",
+        "documentation",
+        "software-engineering-philosophy"
+      ],
+      "source_folder": "naur-programming-as-theory-building",
+      "type": "article"
+    }
+  ],
+  "edges": [
+    {
+      "source": "ietf-draft-narajala-ans/agent-communication-protocols",
+      "target": "ietf-draft-narajala-ans/agent-name-service",
+      "type": "related"
+    },
+    {
+      "source": "ietf-draft-narajala-ans/agent-communication-protocols",
+      "target": "ietf-draft-narajala-ans/agent-discovery",
+      "type": "related"
+    },
+    {
+      "source": "ietf-draft-narajala-ans/agent-communication-protocols",
+      "target": "ietf-draft-narajala-ans/agent-identity-and-trust",
+      "type": "related"
+    },
+    {
+      "source": "ietf-draft-narajala-ans/agent-communication-protocols",
+      "target": "ietf-draft-narajala-ans/summary-ietf-draft-narajala-ans",
+      "type": "source"
+    },
+    {
+      "source": "ietf-draft-narajala-ans/agent-discovery",
+      "target": "ietf-draft-narajala-ans/agent-name-service",
+      "type": "related"
+    },
+    {
+      "source": "ietf-draft-narajala-ans/agent-discovery",
+      "target": "ietf-draft-narajala-ans/agent-communication-protocols",
+      "type": "related"
+    },
+    {
+      "source": "ietf-draft-narajala-ans/agent-discovery",
+      "target": "ietf-draft-narajala-ans/agent-identity-and-trust",
+      "type": "related"
+    },
+    {
+      "source": "ietf-draft-narajala-ans/agent-discovery",
+      "target": "ietf-draft-narajala-ans/summary-ietf-draft-narajala-ans",
+      "type": "source"
+    },
+    {
+      "source": "ietf-draft-narajala-ans/agent-identity-and-trust",
+      "target": "ietf-draft-narajala-ans/agent-name-service",
+      "type": "related"
+    },
+    {
+      "source": "ietf-draft-narajala-ans/agent-identity-and-trust",
+      "target": "ietf-draft-narajala-ans/agent-discovery",
+      "type": "related"
+    },
+    {
+      "source": "ietf-draft-narajala-ans/agent-identity-and-trust",
+      "target": "ietf-draft-narajala-ans/agent-communication-protocols",
+      "type": "related"
+    },
+    {
+      "source": "ietf-draft-narajala-ans/agent-identity-and-trust",
+      "target": "ietf-draft-narajala-ans/maestro-threat-framework",
+      "type": "related"
+    },
+    {
+      "source": "ietf-draft-narajala-ans/agent-identity-and-trust",
+      "target": "ietf-draft-narajala-ans/summary-ietf-draft-narajala-ans",
+      "type": "source"
+    },
+    {
+      "source": "ietf-draft-narajala-ans/agent-name-service",
+      "target": "ietf-draft-narajala-ans/agent-communication-protocols",
+      "type": "related"
+    },
+    {
+      "source": "ietf-draft-narajala-ans/agent-name-service",
+      "target": "ietf-draft-narajala-ans/agent-discovery",
+      "type": "related"
+    },
+    {
+      "source": "ietf-draft-narajala-ans/agent-name-service",
+      "target": "ietf-draft-narajala-ans/agent-identity-and-trust",
+      "type": "related"
+    },
+    {
+      "source": "ietf-draft-narajala-ans/agent-name-service",
+      "target": "ietf-draft-narajala-ans/summary-ietf-draft-narajala-ans",
+      "type": "source"
+    },
+    {
+      "source": "ietf-draft-narajala-ans/maestro-threat-framework",
+      "target": "ietf-draft-narajala-ans/agent-name-service",
+      "type": "related"
+    },
+    {
+      "source": "ietf-draft-narajala-ans/maestro-threat-framework",
+      "target": "ietf-draft-narajala-ans/agent-identity-and-trust",
+      "type": "related"
+    },
+    {
+      "source": "ietf-draft-narajala-ans/maestro-threat-framework",
+      "target": "ietf-draft-narajala-ans/summary-ietf-draft-narajala-ans",
+      "type": "source"
+    },
+    {
+      "source": "naur-programming-as-theory-building/metaphor-driven-design",
+      "target": "naur-programming-as-theory-building/programming-as-theory-building",
+      "type": "related"
+    },
+    {
+      "source": "naur-programming-as-theory-building/metaphor-driven-design",
+      "target": "naur-programming-as-theory-building/tacit-knowledge-in-software",
+      "type": "related"
+    },
+    {
+      "source": "naur-programming-as-theory-building/metaphor-driven-design",
+      "target": "naur-programming-as-theory-building/summary-naur-programming-as-theory-building",
+      "type": "source"
+    },
+    {
+      "source": "naur-programming-as-theory-building/program-lifecycle",
+      "target": "naur-programming-as-theory-building/programming-as-theory-building",
+      "type": "related"
+    },
+    {
+      "source": "naur-programming-as-theory-building/program-lifecycle",
+      "target": "naur-programming-as-theory-building/tacit-knowledge-in-software",
+      "type": "related"
+    },
+    {
+      "source": "naur-programming-as-theory-building/program-lifecycle",
+      "target": "naur-programming-as-theory-building/software-modification-challenges",
+      "type": "related"
+    },
+    {
+      "source": "naur-programming-as-theory-building/program-lifecycle",
+      "target": "naur-programming-as-theory-building/summary-naur-programming-as-theory-building",
+      "type": "source"
+    },
+    {
+      "source": "naur-programming-as-theory-building/programming-as-theory-building",
+      "target": "naur-programming-as-theory-building/tacit-knowledge-in-software",
+      "type": "related"
+    },
+    {
+      "source": "naur-programming-as-theory-building/programming-as-theory-building",
+      "target": "naur-programming-as-theory-building/program-lifecycle",
+      "type": "related"
+    },
+    {
+      "source": "naur-programming-as-theory-building/programming-as-theory-building",
+      "target": "naur-programming-as-theory-building/software-modification-challenges",
+      "type": "related"
+    },
+    {
+      "source": "naur-programming-as-theory-building/programming-as-theory-building",
+      "target": "naur-programming-as-theory-building/metaphor-driven-design",
+      "type": "related"
+    },
+    {
+      "source": "naur-programming-as-theory-building/programming-as-theory-building",
+      "target": "naur-programming-as-theory-building/summary-naur-programming-as-theory-building",
+      "type": "source"
+    },
+    {
+      "source": "naur-programming-as-theory-building/software-modification-challenges",
+      "target": "naur-programming-as-theory-building/programming-as-theory-building",
+      "type": "related"
+    },
+    {
+      "source": "naur-programming-as-theory-building/software-modification-challenges",
+      "target": "naur-programming-as-theory-building/tacit-knowledge-in-software",
+      "type": "related"
+    },
+    {
+      "source": "naur-programming-as-theory-building/software-modification-challenges",
+      "target": "naur-programming-as-theory-building/program-lifecycle",
+      "type": "related"
+    },
+    {
+      "source": "naur-programming-as-theory-building/software-modification-challenges",
+      "target": "naur-programming-as-theory-building/summary-naur-programming-as-theory-building",
+      "type": "source"
+    },
+    {
+      "source": "naur-programming-as-theory-building/tacit-knowledge-in-software",
+      "target": "naur-programming-as-theory-building/programming-as-theory-building",
+      "type": "related"
+    },
+    {
+      "source": "naur-programming-as-theory-building/tacit-knowledge-in-software",
+      "target": "naur-programming-as-theory-building/program-lifecycle",
+      "type": "related"
+    },
+    {
+      "source": "naur-programming-as-theory-building/tacit-knowledge-in-software",
+      "target": "naur-programming-as-theory-building/software-modification-challenges",
+      "type": "related"
+    },
+    {
+      "source": "naur-programming-as-theory-building/tacit-knowledge-in-software",
+      "target": "naur-programming-as-theory-building/summary-naur-programming-as-theory-building",
+      "type": "source"
+    }
+  ]
+};
+
+  const svg = d3.select("#graph");
+  const width = window.innerWidth;
+  const height = window.innerHeight;
+  svg.attr("width", width).attr("height", height);
+
+  const folders = [...new Set(data.nodes.map(n => n.source_folder))].sort();
+  const allTags = [...new Set(data.nodes.flatMap(n => n.tags || []))].sort();
+
+  const folderSelect = document.getElementById("filter-folder");
+  folders.forEach(f => {
+    const opt = document.createElement("option");
+    opt.value = f;
+    opt.textContent = f;
+    folderSelect.appendChild(opt);
+  });
+
+  const tagSelect = document.getElementById("filter-tag");
+  allTags.forEach(t => {
+    const opt = document.createElement("option");
+    opt.value = t;
+    opt.textContent = t;
+    tagSelect.appendChild(opt);
+  });
+
+  const folderColors = {};
+  const palette = ["#f78166", "#d2a8ff", "#79c0ff", "#56d364", "#ffa657", "#ff7b72", "#a5d6ff"];
+  folders.forEach((f, i) => { folderColors[f] = palette[i % palette.length]; });
+
+  const simulation = d3.forceSimulation(data.nodes)
+    .force("link", d3.forceLink(data.edges).id(d => d.id).distance(100))
+    .force("charge", d3.forceManyBody().strength(-300))
+    .force("center", d3.forceCenter(width / 2, height / 2))
+    .force("collision", d3.forceCollide().radius(30));
+
+  const g = svg.append("g");
+
+  svg.call(d3.zoom()
+    .scaleExtent([0.2, 4])
+    .on("zoom", (event) => g.attr("transform", event.transform)));
+
+  const link = g.append("g")
+    .selectAll("line")
+    .data(data.edges)
+    .join("line")
+    .attr("stroke", d => d.type === "source" ? "#238636" : "#30363d")
+    .attr("stroke-width", d => d.type === "source" ? 1.5 : 1)
+    .attr("stroke-dasharray", d => d.type === "source" ? "4,3" : null);
+
+  const node = g.append("g")
+    .selectAll("circle")
+    .data(data.nodes)
+    .join("circle")
+    .attr("r", d => d.type === "summary" ? 10 : 7)
+    .attr("fill", d => d.type === "summary" ? "#3fb950" : folderColors[d.source_folder])
+    .attr("stroke", "#0d1117")
+    .attr("stroke-width", 1.5)
+    .style("cursor", "pointer")
+    .call(d3.drag()
+      .on("start", dragstarted)
+      .on("drag", dragged)
+      .on("end", dragended));
+
+  const label = g.append("g")
+    .selectAll("text")
+    .data(data.nodes)
+    .join("text")
+    .text(d => d.title.length > 30 ? d.title.slice(0, 28) + "..." : d.title)
+    .attr("font-size", 10)
+    .attr("fill", "#8b949e")
+    .attr("dx", 14)
+    .attr("dy", 4);
+
+  const tooltip = document.getElementById("tooltip");
+
+  node.on("mouseover", (event, d) => {
+    tooltip.querySelector(".title").textContent = d.title;
+    tooltip.querySelector(".folder").textContent = "Folder: " + d.source_folder;
+    const tagsHtml = (d.tags || []).map(t => `<span class="tag">${t}</span>`).join("");
+    tooltip.querySelector(".tags").innerHTML = tagsHtml;
+    tooltip.style.opacity = 1;
+    tooltip.style.left = (event.clientX + 16) + "px";
+    tooltip.style.top = (event.clientY - 10) + "px";
+
+    const connected = new Set();
+    data.edges.forEach(e => {
+      const sid = typeof e.source === "object" ? e.source.id : e.source;
+      const tid = typeof e.target === "object" ? e.target.id : e.target;
+      if (sid === d.id) connected.add(tid);
+      if (tid === d.id) connected.add(sid);
+    });
+    connected.add(d.id);
+
+    node.attr("opacity", n => connected.has(n.id) ? 1 : 0.15);
+    label.attr("opacity", n => connected.has(n.id) ? 1 : 0.1);
+    link.attr("opacity", e => {
+      const sid = typeof e.source === "object" ? e.source.id : e.source;
+      const tid = typeof e.target === "object" ? e.target.id : e.target;
+      return (sid === d.id || tid === d.id) ? 1 : 0.05;
+    });
+  })
+  .on("mousemove", (event) => {
+    tooltip.style.left = (event.clientX + 16) + "px";
+    tooltip.style.top = (event.clientY - 10) + "px";
+  })
+  .on("mouseout", () => {
+    tooltip.style.opacity = 0;
+    node.attr("opacity", 1);
+    label.attr("opacity", 1);
+    link.attr("opacity", 1);
+  });
+
+  simulation.on("tick", () => {
+    link
+      .attr("x1", d => d.source.x)
+      .attr("y1", d => d.source.y)
+      .attr("x2", d => d.target.x)
+      .attr("y2", d => d.target.y);
+    node
+      .attr("cx", d => d.x)
+      .attr("cy", d => d.y);
+    label
+      .attr("x", d => d.x)
+      .attr("y", d => d.y);
+  });
+
+  const articleCount = data.nodes.filter(n => n.type === "article").length;
+  const summaryCount = data.nodes.filter(n => n.type === "summary").length;
+  const edgeCount = data.edges.length;
+  document.getElementById("stats").textContent =
+    `${articleCount} articles | ${summaryCount} summaries | ${edgeCount} edges | ${allTags.length} tags`;
+
+  function applyFilters() {
+    const folder = folderSelect.value;
+    const tag = tagSelect.value;
+    const edgeType = document.getElementById("edge-type").value;
+
+    const activeNodes = new Set();
+    data.nodes.forEach(n => {
+      const folderMatch = folder === "all" || n.source_folder === folder;
+      const tagMatch = tag === "all" || (n.tags || []).includes(tag);
+      if (folderMatch && tagMatch) activeNodes.add(n.id);
+    });
+
+    node
+      .attr("fill", d => {
+        if (!activeNodes.has(d.id)) return "#21262d";
+        return d.type === "summary" ? "#3fb950" : folderColors[d.source_folder];
+      })
+      .attr("opacity", d => activeNodes.has(d.id) ? 1 : 0.2)
+      .attr("r", d => {
+        if (!activeNodes.has(d.id)) return 4;
+        return d.type === "summary" ? 10 : 7;
+      });
+
+    label.attr("opacity", d => activeNodes.has(d.id) ? 1 : 0.1);
+
+    link
+      .attr("opacity", d => {
+        const sid = typeof d.source === "object" ? d.source.id : d.source;
+        const tid = typeof d.target === "object" ? d.target.id : d.target;
+        const nodesVisible = activeNodes.has(sid) && activeNodes.has(tid);
+        const typeMatch = edgeType === "all" || d.type === edgeType;
+        return (nodesVisible && typeMatch) ? 0.6 : 0.03;
+      });
+  }
+
+  folderSelect.addEventListener("change", applyFilters);
+  tagSelect.addEventListener("change", applyFilters);
+  document.getElementById("edge-type").addEventListener("change", applyFilters);
+
+  function dragstarted(event) {
+    if (!event.active) simulation.alphaTarget(0.3).restart();
+    event.subject.fx = event.subject.x;
+    event.subject.fy = event.subject.y;
+  }
+
+  function dragged(event) {
+    event.subject.fx = event.x;
+    event.subject.fy = event.y;
+  }
+
+  function dragended(event) {
+    if (!event.active) simulation.alphaTarget(0);
+    event.subject.fx = null;
+    event.subject.fy = null;
+  }
+})();
+</script>
+</body>
+</html>

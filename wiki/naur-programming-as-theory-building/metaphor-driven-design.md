@@ -3,7 +3,8 @@ title: Metaphor-Driven Design
 created: 2026-04-07
 updated: 2026-04-07
 sources: [raw/20260407-pablorauzyname-dev-naur1985programmingpdf.md]
-related: [[programming-as-theory-building]], [[tacit-knowledge-in-software]]
+related: [programming-as-theory-building](programming-as-theory-building.md), [tacit-knowledge-in-software](tacit-knowledge-in-software.md)
+tags: [metaphor, design-communication, extreme-programming, team-alignment, clean-code, software-engineering-philosophy]
 ---
 
 # Metaphor-Driven Design
@@ -31,8 +32,8 @@ Source code itself serves as a form of theory communication. Simple, consistent 
 - The concept bridges Naur's 1985 philosophy with XP practices from the early 2000s
 
 ## Related Concepts
-- [[programming-as-theory-building]] - The foundational view that metaphor-driven design operationalizes
-- [[tacit-knowledge-in-software]] - Metaphors help transmit the tacit knowledge that documentation alone cannot capture
+- [Programming as Theory Building](programming-as-theory-building.md) - The foundational view that metaphor-driven design operationalizes
+- [Tacit Knowledge in Software](tacit-knowledge-in-software.md) - Metaphors help transmit the tacit knowledge that documentation alone cannot capture
 
 ## Sources
 - raw/20260407-pablorauzyname-dev-naur1985programmingpdf.md - The "Applying Theory Building" addendum discussing metaphors in the context of Extreme Programming and documentation practices

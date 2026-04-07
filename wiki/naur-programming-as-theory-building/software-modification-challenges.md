@@ -3,7 +3,8 @@ title: Software Modification Challenges
 created: 2026-04-07
 updated: 2026-04-07
 sources: [raw/20260407-pablorauzyname-dev-naur1985programmingpdf.md]
-related: [[programming-as-theory-building]], [[tacit-knowledge-in-software]], [[program-lifecycle]]
+related: [programming-as-theory-building](programming-as-theory-building.md), [tacit-knowledge-in-software](tacit-knowledge-in-software.md), [program-lifecycle](program-lifecycle.md)
+tags: [software-modification, technical-debt, structural-decay, code-maintenance, software-engineering-philosophy]
 ---
 
 # Software Modification Challenges
@@ -33,9 +34,9 @@ Naur argues that the expectation of low-cost modifications is based on a false a
 - Qualities like simplicity and good structure can only be understood relative to the program's theory
 
 ## Related Concepts
-- [[programming-as-theory-building]] - The framework that explains why modifications require theory possession
-- [[tacit-knowledge-in-software]] - The kind of understanding needed to make coherent modifications
-- [[program-lifecycle]] - Modification difficulties are the visible symptom of program death
+- [Programming as Theory Building](programming-as-theory-building.md) - The framework that explains why modifications require theory possession
+- [Tacit Knowledge in Software](tacit-knowledge-in-software.md) - The kind of understanding needed to make coherent modifications
+- [Program Lifecycle](program-lifecycle.md) - Modification difficulties are the visible symptom of program death
 
 ## Sources
 - raw/20260407-pablorauzyname-dev-naur1985programmingpdf.md - Naur's analysis of modification costs, the compiler decay case study, and the critique of built-in flexibility

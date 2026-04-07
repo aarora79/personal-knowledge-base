@@ -3,7 +3,8 @@ title: Programming as Theory Building
 created: 2026-04-07
 updated: 2026-04-07
 sources: [raw/20260407-pablorauzyname-dev-naur1985programmingpdf.md]
-related: [[tacit-knowledge-in-software]], [[program-lifecycle]], [[software-modification-challenges]], [[metaphor-driven-design]]
+related: [tacit-knowledge-in-software](tacit-knowledge-in-software.md), [program-lifecycle](program-lifecycle.md), [software-modification-challenges](software-modification-challenges.md), [metaphor-driven-design](metaphor-driven-design.md)
+tags: [theory-building, peter-naur, gilbert-ryle, tacit-knowledge, software-engineering-philosophy, programming-methodology]
 ---
 
 # Programming as Theory Building
@@ -35,10 +36,10 @@ Naur's view has profound implications for software engineering practice, challen
 - Programmers should be treated as permanent, responsible professionals rather than replaceable components
 
 ## Related Concepts
-- [[tacit-knowledge-in-software]] - Ryle's notion of theory as knowledge that cannot be fully articulated
-- [[program-lifecycle]] - Naur's concepts of program life, death, and revival
-- [[software-modification-challenges]] - Why program modifications are inherently difficult
-- [[metaphor-driven-design]] - Using shared metaphors to communicate design theories
+- [Tacit Knowledge in Software](tacit-knowledge-in-software.md) - Ryle's notion of theory as knowledge that cannot be fully articulated
+- [Program Lifecycle](program-lifecycle.md) - Naur's concepts of program life, death, and revival
+- [Software Modification Challenges](software-modification-challenges.md) - Why program modifications are inherently difficult
+- [Metaphor-Driven Design](metaphor-driven-design.md) - Using shared metaphors to communicate design theories
 
 ## Sources
 - raw/20260407-pablorauzyname-dev-naur1985programmingpdf.md - Peter Naur's 1985 essay, the primary and defining source for this concept

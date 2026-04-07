@@ -1,0 +1,375 @@
+{
+  "nodes": [
+    {
+      "id": "ietf-draft-narajala-ans/agent-communication-protocols",
+      "title": "Agent Communication Protocols",
+      "file": "wiki/ietf-draft-narajala-ans/agent-communication-protocols.md",
+      "tags": [
+        "a2a",
+        "mcp",
+        "acp",
+        "agent-protocols",
+        "interoperability",
+        "ai-agents",
+        "multi-agent-systems"
+      ],
+      "source_folder": "ietf-draft-narajala-ans",
+      "type": "article"
+    },
+    {
+      "id": "ietf-draft-narajala-ans/agent-discovery",
+      "title": "Agent Discovery",
+      "file": "wiki/ietf-draft-narajala-ans/agent-discovery.md",
+      "tags": [
+        "agent-discovery",
+        "service-discovery",
+        "dns",
+        "capability-matching",
+        "ai-agents",
+        "multi-agent-systems"
+      ],
+      "source_folder": "ietf-draft-narajala-ans",
+      "type": "article"
+    },
+    {
+      "id": "ietf-draft-narajala-ans/agent-identity-and-trust",
+      "title": "Agent Identity and Trust",
+      "file": "wiki/ietf-draft-narajala-ans/agent-identity-and-trust.md",
+      "tags": [
+        "pki",
+        "x509",
+        "zero-knowledge-proofs",
+        "oauth",
+        "mtls",
+        "agent-identity",
+        "ai-agents",
+        "multi-agent-systems"
+      ],
+      "source_folder": "ietf-draft-narajala-ans",
+      "type": "article"
+    },
+    {
+      "id": "ietf-draft-narajala-ans/agent-name-service",
+      "title": "Agent Name Service (ANS)",
+      "file": "wiki/ietf-draft-narajala-ans/agent-name-service.md",
+      "tags": [
+        "agent-name-service",
+        "dns",
+        "pki",
+        "capability-discovery",
+        "ietf",
+        "ai-agents",
+        "multi-agent-systems"
+      ],
+      "source_folder": "ietf-draft-narajala-ans",
+      "type": "article"
+    },
+    {
+      "id": "ietf-draft-narajala-ans/maestro-threat-framework",
+      "title": "MAESTRO Threat Framework",
+      "file": "wiki/ietf-draft-narajala-ans/maestro-threat-framework.md",
+      "tags": [
+        "maestro",
+        "owasp",
+        "threat-modeling",
+        "agent-security",
+        "impersonation",
+        "ai-agents",
+        "multi-agent-systems"
+      ],
+      "source_folder": "ietf-draft-narajala-ans",
+      "type": "article"
+    },
+    {
+      "id": "ietf-draft-narajala-ans/summary-ietf-draft-narajala-ans",
+      "title": "Source Summary: Agent Name Service (ANS) IETF Draft",
+      "file": "wiki/ietf-draft-narajala-ans/summary-ietf-draft-narajala-ans.md",
+      "tags": [],
+      "source_folder": "ietf-draft-narajala-ans",
+      "type": "summary"
+    },
+    {
+      "id": "naur-programming-as-theory-building/metaphor-driven-design",
+      "title": "Metaphor-Driven Design",
+      "file": "wiki/naur-programming-as-theory-building/metaphor-driven-design.md",
+      "tags": [
+        "metaphor",
+        "design-communication",
+        "extreme-programming",
+        "team-alignment",
+        "clean-code",
+        "software-engineering-philosophy"
+      ],
+      "source_folder": "naur-programming-as-theory-building",
+      "type": "article"
+    },
+    {
+      "id": "naur-programming-as-theory-building/program-lifecycle",
+      "title": "Program Lifecycle (Life, Death, and Revival)",
+      "file": "wiki/naur-programming-as-theory-building/program-lifecycle.md",
+      "tags": [
+        "program-lifecycle",
+        "team-continuity",
+        "knowledge-transfer",
+        "program-death",
+        "software-engineering-philosophy"
+      ],
+      "source_folder": "naur-programming-as-theory-building",
+      "type": "article"
+    },
+    {
+      "id": "naur-programming-as-theory-building/programming-as-theory-building",
+      "title": "Programming as Theory Building",
+      "file": "wiki/naur-programming-as-theory-building/programming-as-theory-building.md",
+      "tags": [
+        "theory-building",
+        "peter-naur",
+        "gilbert-ryle",
+        "tacit-knowledge",
+        "software-engineering-philosophy",
+        "programming-methodology"
+      ],
+      "source_folder": "naur-programming-as-theory-building",
+      "type": "article"
+    },
+    {
+      "id": "naur-programming-as-theory-building/software-modification-challenges",
+      "title": "Software Modification Challenges",
+      "file": "wiki/naur-programming-as-theory-building/software-modification-challenges.md",
+      "tags": [
+        "software-modification",
+        "technical-debt",
+        "structural-decay",
+        "code-maintenance",
+        "software-engineering-philosophy"
+      ],
+      "source_folder": "naur-programming-as-theory-building",
+      "type": "article"
+    },
+    {
+      "id": "naur-programming-as-theory-building/summary-naur-programming-as-theory-building",
+      "title": "Source Summary: Programming as Theory Building (Peter Naur, 1985)",
+      "file": "wiki/naur-programming-as-theory-building/summary-naur-programming-as-theory-building.md",
+      "tags": [],
+      "source_folder": "naur-programming-as-theory-building",
+      "type": "summary"
+    },
+    {
+      "id": "naur-programming-as-theory-building/tacit-knowledge-in-software",
+      "title": "Tacit Knowledge in Software Development",
+      "file": "wiki/naur-programming-as-theory-building/tacit-knowledge-in-software.md",
+      "tags": [
+        "tacit-knowledge",
+        "epistemology",
+        "gilbert-ryle",
+        "knowledge-transfer",
+        "documentation",
+        "software-engineering-philosophy"
+      ],
+      "source_folder": "naur-programming-as-theory-building",
+      "type": "article"
+    }
+  ],
+  "edges": [
+    {
+      "source": "ietf-draft-narajala-ans/agent-communication-protocols",
+      "target": "ietf-draft-narajala-ans/agent-name-service",
+      "type": "related"
+    },
+    {
+      "source": "ietf-draft-narajala-ans/agent-communication-protocols",
+      "target": "ietf-draft-narajala-ans/agent-discovery",
+      "type": "related"
+    },
+    {
+      "source": "ietf-draft-narajala-ans/agent-communication-protocols",
+      "target": "ietf-draft-narajala-ans/agent-identity-and-trust",
+      "type": "related"
+    },
+    {
+      "source": "ietf-draft-narajala-ans/agent-communication-protocols",
+      "target": "ietf-draft-narajala-ans/summary-ietf-draft-narajala-ans",
+      "type": "source"
+    },
+    {
+      "source": "ietf-draft-narajala-ans/agent-discovery",
+      "target": "ietf-draft-narajala-ans/agent-name-service",
+      "type": "related"
+    },
+    {
+      "source": "ietf-draft-narajala-ans/agent-discovery",
+      "target": "ietf-draft-narajala-ans/agent-communication-protocols",
+      "type": "related"
+    },
+    {
+      "source": "ietf-draft-narajala-ans/agent-discovery",
+      "target": "ietf-draft-narajala-ans/agent-identity-and-trust",
+      "type": "related"
+    },
+    {
+      "source": "ietf-draft-narajala-ans/agent-discovery",
+      "target": "ietf-draft-narajala-ans/summary-ietf-draft-narajala-ans",
+      "type": "source"
+    },
+    {
+      "source": "ietf-draft-narajala-ans/agent-identity-and-trust",
+      "target": "ietf-draft-narajala-ans/agent-name-service",
+      "type": "related"
+    },
+    {
+      "source": "ietf-draft-narajala-ans/agent-identity-and-trust",
+      "target": "ietf-draft-narajala-ans/agent-discovery",
+      "type": "related"
+    },
+    {
+      "source": "ietf-draft-narajala-ans/agent-identity-and-trust",
+      "target": "ietf-draft-narajala-ans/agent-communication-protocols",
+      "type": "related"
+    },
+    {
+      "source": "ietf-draft-narajala-ans/agent-identity-and-trust",
+      "target": "ietf-draft-narajala-ans/maestro-threat-framework",
+      "type": "related"
+    },
+    {
+      "source": "ietf-draft-narajala-ans/agent-identity-and-trust",
+      "target": "ietf-draft-narajala-ans/summary-ietf-draft-narajala-ans",
+      "type": "source"
+    },
+    {
+      "source": "ietf-draft-narajala-ans/agent-name-service",
+      "target": "ietf-draft-narajala-ans/agent-communication-protocols",
+      "type": "related"
+    },
+    {
+      "source": "ietf-draft-narajala-ans/agent-name-service",
+      "target": "ietf-draft-narajala-ans/agent-discovery",
+      "type": "related"
+    },
+    {
+      "source": "ietf-draft-narajala-ans/agent-name-service",
+      "target": "ietf-draft-narajala-ans/agent-identity-and-trust",
+      "type": "related"
+    },
+    {
+      "source": "ietf-draft-narajala-ans/agent-name-service",
+      "target": "ietf-draft-narajala-ans/summary-ietf-draft-narajala-ans",
+      "type": "source"
+    },
+    {
+      "source": "ietf-draft-narajala-ans/maestro-threat-framework",
+      "target": "ietf-draft-narajala-ans/agent-name-service",
+      "type": "related"
+    },
+    {
+      "source": "ietf-draft-narajala-ans/maestro-threat-framework",
+      "target": "ietf-draft-narajala-ans/agent-identity-and-trust",
+      "type": "related"
+    },
+    {
+      "source": "ietf-draft-narajala-ans/maestro-threat-framework",
+      "target": "ietf-draft-narajala-ans/summary-ietf-draft-narajala-ans",
+      "type": "source"
+    },
+    {
+      "source": "naur-programming-as-theory-building/metaphor-driven-design",
+      "target": "naur-programming-as-theory-building/programming-as-theory-building",
+      "type": "related"
+    },
+    {
+      "source": "naur-programming-as-theory-building/metaphor-driven-design",
+      "target": "naur-programming-as-theory-building/tacit-knowledge-in-software",
+      "type": "related"
+    },
+    {
+      "source": "naur-programming-as-theory-building/metaphor-driven-design",
+      "target": "naur-programming-as-theory-building/summary-naur-programming-as-theory-building",
+      "type": "source"
+    },
+    {
+      "source": "naur-programming-as-theory-building/program-lifecycle",
+      "target": "naur-programming-as-theory-building/programming-as-theory-building",
+      "type": "related"
+    },
+    {
+      "source": "naur-programming-as-theory-building/program-lifecycle",
+      "target": "naur-programming-as-theory-building/tacit-knowledge-in-software",
+      "type": "related"
+    },
+    {
+      "source": "naur-programming-as-theory-building/program-lifecycle",
+      "target": "naur-programming-as-theory-building/software-modification-challenges",
+      "type": "related"
+    },
+    {
+      "source": "naur-programming-as-theory-building/program-lifecycle",
+      "target": "naur-programming-as-theory-building/summary-naur-programming-as-theory-building",
+      "type": "source"
+    },
+    {
+      "source": "naur-programming-as-theory-building/programming-as-theory-building",
+      "target": "naur-programming-as-theory-building/tacit-knowledge-in-software",
+      "type": "related"
+    },
+    {
+      "source": "naur-programming-as-theory-building/programming-as-theory-building",
+      "target": "naur-programming-as-theory-building/program-lifecycle",
+      "type": "related"
+    },
+    {
+      "source": "naur-programming-as-theory-building/programming-as-theory-building",
+      "target": "naur-programming-as-theory-building/software-modification-challenges",
+      "type": "related"
+    },
+    {
+      "source": "naur-programming-as-theory-building/programming-as-theory-building",
+      "target": "naur-programming-as-theory-building/metaphor-driven-design",
+      "type": "related"
+    },
+    {
+      "source": "naur-programming-as-theory-building/programming-as-theory-building",
+      "target": "naur-programming-as-theory-building/summary-naur-programming-as-theory-building",
+      "type": "source"
+    },
+    {
+      "source": "naur-programming-as-theory-building/software-modification-challenges",
+      "target": "naur-programming-as-theory-building/programming-as-theory-building",
+      "type": "related"
+    },
+    {
+      "source": "naur-programming-as-theory-building/software-modification-challenges",
+      "target": "naur-programming-as-theory-building/tacit-knowledge-in-software",
+      "type": "related"
+    },
+    {
+      "source": "naur-programming-as-theory-building/software-modification-challenges",
+      "target": "naur-programming-as-theory-building/program-lifecycle",
+      "type": "related"
+    },
+    {
+      "source": "naur-programming-as-theory-building/software-modification-challenges",
+      "target": "naur-programming-as-theory-building/summary-naur-programming-as-theory-building",
+      "type": "source"
+    },
+    {
+      "source": "naur-programming-as-theory-building/tacit-knowledge-in-software",
+      "target": "naur-programming-as-theory-building/programming-as-theory-building",
+      "type": "related"
+    },
+    {
+      "source": "naur-programming-as-theory-building/tacit-knowledge-in-software",
+      "target": "naur-programming-as-theory-building/program-lifecycle",
+      "type": "related"
+    },
+    {
+      "source": "naur-programming-as-theory-building/tacit-knowledge-in-software",
+      "target": "naur-programming-as-theory-building/software-modification-challenges",
+      "type": "related"
+    },
+    {
+      "source": "naur-programming-as-theory-building/tacit-knowledge-in-software",
+      "target": "naur-programming-as-theory-building/summary-naur-programming-as-theory-building",
+      "type": "source"
+    }
+  ]
+}

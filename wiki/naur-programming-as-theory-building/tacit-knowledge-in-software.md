@@ -3,7 +3,8 @@ title: Tacit Knowledge in Software Development
 created: 2026-04-07
 updated: 2026-04-07
 sources: [raw/20260407-pablorauzyname-dev-naur1985programmingpdf.md]
-related: [[programming-as-theory-building]], [[program-lifecycle]], [[software-modification-challenges]]
+related: [programming-as-theory-building](programming-as-theory-building.md), [program-lifecycle](program-lifecycle.md), [software-modification-challenges](software-modification-challenges.md)
+tags: [tacit-knowledge, epistemology, gilbert-ryle, knowledge-transfer, documentation, software-engineering-philosophy]
 ---
 
 # Tacit Knowledge in Software Development
@@ -28,9 +29,9 @@ Ryle further notes that intelligent behavior is not dependent on following rules
 - Popper's "unembodied World 3 objects" provides philosophical grounding for Ryle's notion of theory
 
 ## Related Concepts
-- [[programming-as-theory-building]] - The broader framework in which tacit knowledge plays a central role
-- [[program-lifecycle]] - Tacit knowledge loss is what causes program "death"
-- [[software-modification-challenges]] - Modifications require tacit knowledge of structural similarity
+- [Programming as Theory Building](programming-as-theory-building.md) - The broader framework in which tacit knowledge plays a central role
+- [Program Lifecycle](program-lifecycle.md) - Tacit knowledge loss is what causes program "death"
+- [Software Modification Challenges](software-modification-challenges.md) - Modifications require tacit knowledge of structural similarity
 
 ## Sources
 - raw/20260407-pablorauzyname-dev-naur1985programmingpdf.md - Naur's application of Ryle's philosophy to programming, including the compiler case study demonstrating tacit knowledge failure
