@@ -39,7 +39,6 @@ personal-knowledge-base/
 ├── clip.sh                # URL-to-markdown ingestion script
 ├── pyproject.toml         # Python dependencies (trafilatura, markitdown)
 ├── docs/
-│   ├── architecture.md    # System architecture and design decisions
 │   └── img/               # Screenshots and diagrams
 ├── raw/                   # Source documents (append-only, never edit)
 │   └── YYYYMMDD-source-slug.md
@@ -247,10 +246,6 @@ This knowledge base covers Generative AI and related topics:
 - Cloud AI Services (Amazon Bedrock)
 - Software Engineering Philosophy
 - Economics of Organization
-
-## Content Sources
-
-The initial set of bookmarks comes from the [gu-dsan6725/bookmarks](https://github.com/gu-dsan6725/bookmarks) repository, a curated collection of GenAI resources.
 
 ## References
 
