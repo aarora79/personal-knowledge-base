@@ -1,5 +1,12 @@
 # Changelog
 
+## [2026-04-08] ingest | Claude Code Memory Management (Young Leaders in Tech #98)
+- Processed: raw/20260408-youngleaderstech-p-how-i-finally-sorted-my-claude-code-memor.md
+- Folder: wiki/claude-code-memory-management/
+- Created: claude-code-memory-system.md, structured-memory-architecture.md, claude-code-hooks.md, domain-knowledge-lifecycle.md, context-window-budget-management.md
+- Summary: wiki/claude-code-memory-management/summary-claude-code-memory-management.md (depth: 500)
+- Updated: wiki/frontend-slides/claude-code-skills-and-plugins.md (added backlinks to domain-knowledge-lifecycle, claude-code-hooks), wiki/frontend-slides/progressive-disclosure-in-ai-tools.md (added backlinks to structured-memory-architecture, context-window-budget-management)
+
 ## [2026-04-08] ingest | Frontend Slides - Claude Code Skill for Web Presentations
 - Processed: raw/20260408-githubcom-zarazhangrui-frontend-slides-tree-main.md
 - Folder: wiki/frontend-slides/

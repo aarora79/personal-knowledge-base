@@ -1,6 +1,6 @@
 # Knowledge Base Index
 Last updated: 2026-04-08
-Total articles: 44
+Total articles: 49
 
 ## Categories
 
@@ -73,6 +73,11 @@ Total articles: 44
 ### AI Tool Design
 - [Progressive Disclosure in AI Tools](frontend-slides/progressive-disclosure-in-ai-tools.md) - Loading AI tool instructions on-demand to conserve context window
 - [Vibe Coding](frontend-slides/vibe-coding.md) - Philosophy of building software by describing intent, not writing code
+- [Claude Code Memory System](claude-code-memory-management/claude-code-memory-system.md) - Auto memory feature with global and project scopes, 200-line MEMORY.md constraint
+- [Structured Memory Architecture](claude-code-memory-management/structured-memory-architecture.md) - Directory-based memory organization with tools/, domain/, and general.md tiers
+- [Claude Code Hooks](claude-code-memory-management/claude-code-hooks.md) - PreToolUse hooks for automatic memory injection with PPID-based session tracking
+- [Domain Knowledge Lifecycle](claude-code-memory-management/domain-knowledge-lifecycle.md) - Three-stage progression from staging to skill promotion to pointer
+- [Context Window Budget Management](claude-code-memory-management/context-window-budget-management.md) - Strategic allocation of the 200-line MEMORY.md budget
 
 ### Cloud AI Services
 <!-- Amazon Bedrock, model hosting, inference APIs -->
@@ -95,3 +100,4 @@ Total articles: 44
 - [SATLUTION: Autonomous Code Evolution Meets NP-Completeness](arxiv-2509-07367/summary-arxiv-2509-07367.md)
 - [Coase: The Nature of the Firm (1937)](coase-nature-of-the-firm/summary-coase-nature-of-the-firm.md)
 - [Frontend Slides: Claude Code Skill for Web Presentations](frontend-slides/summary-frontend-slides.md)
+- [Claude Code Memory Management](claude-code-memory-management/summary-claude-code-memory-management.md)

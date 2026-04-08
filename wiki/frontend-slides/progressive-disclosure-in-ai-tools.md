@@ -3,7 +3,7 @@ title: Progressive Disclosure in AI Tools
 created: 2026-04-08
 updated: 2026-04-08
 sources: [raw/20260408-githubcom-zarazhangrui-frontend-slides-tree-main.md]
-related: [claude-code-skills-and-plugins](claude-code-skills-and-plugins.md), [../arxiv-2510-11977/agent-scaffolds](../arxiv-2510-11977/agent-scaffolds.md)
+related: [claude-code-skills-and-plugins](claude-code-skills-and-plugins.md), [../arxiv-2510-11977/agent-scaffolds](../arxiv-2510-11977/agent-scaffolds.md), [structured-memory-architecture](../claude-code-memory-management/structured-memory-architecture.md), [context-window-budget-management](../claude-code-memory-management/context-window-budget-management.md)
 tags: [progressive-disclosure, ai-tool-design, prompt-engineering, context-window, harness-engineering]
 ---
 

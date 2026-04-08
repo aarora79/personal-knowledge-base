@@ -3,7 +3,7 @@ title: Claude Code Skills and Plugins
 created: 2026-04-08
 updated: 2026-04-08
 sources: [raw/20260408-githubcom-zarazhangrui-frontend-slides-tree-main.md]
-related: [progressive-disclosure-in-ai-tools](progressive-disclosure-in-ai-tools.md), [vibe-coding](vibe-coding.md)
+related: [progressive-disclosure-in-ai-tools](progressive-disclosure-in-ai-tools.md), [vibe-coding](vibe-coding.md), [domain-knowledge-lifecycle](../claude-code-memory-management/domain-knowledge-lifecycle.md), [claude-code-hooks](../claude-code-memory-management/claude-code-hooks.md)
 tags: [claude-code, ai-tools, plugin-architecture, developer-experience, genai-applications]
 ---
 
