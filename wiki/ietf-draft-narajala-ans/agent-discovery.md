@@ -1,9 +1,9 @@
 ---
 title: Agent Discovery
 created: 2026-04-07
-updated: 2026-04-07
+updated: 2026-04-08
 sources: [raw/20260407-ietf-draft-narajala-ans.md]
-related: [agent-name-service](agent-name-service.md), [agent-communication-protocols](agent-communication-protocols.md), [agent-identity-and-trust](agent-identity-and-trust.md)
+related: [agent-name-service](agent-name-service.md), [agent-communication-protocols](agent-communication-protocols.md), [agent-identity-and-trust](agent-identity-and-trust.md), [agentic-speculation](../agent-first-data-systems/agentic-speculation.md), [Holistic Agent Leaderboard](../arxiv-2510-11977/holistic-agent-leaderboard.md)
 tags: [agent-discovery, service-discovery, dns, capability-matching, ai-agents, multi-agent-systems]
 ---
 
@@ -30,6 +30,7 @@ The Agent Name Service (ANS) IETF draft proposes a comprehensive solution using 
 - [Agent Name Service](agent-name-service.md) - the proposed protocol for solving agent discovery
 - [Agent Communication Protocols](agent-communication-protocols.md) - the protocols that agents use after discovery
 - [Agent Identity and Trust](agent-identity-and-trust.md) - the trust layer that makes discovery secure
+- [Agentic Speculation](../agent-first-data-systems/agentic-speculation.md) - how agents use high-throughput discovery and querying once connected to data systems
 
 ## Sources
 - raw/20260407-ietf-draft-narajala-ans.md - IETF draft analyzing discovery gaps and proposing ANS

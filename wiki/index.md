@@ -1,6 +1,6 @@
 # Knowledge Base Index
-Last updated: 2026-04-07
-Total articles: 10
+Last updated: 2026-04-08
+Total articles: 39
 
 ## Categories
 
@@ -19,6 +19,18 @@ Total articles: 10
 - [Agent Discovery](ietf-draft-narajala-ans/agent-discovery.md) - The problem of how agents find, verify, and communicate with each other
 - [Agent Identity and Trust](ietf-draft-narajala-ans/agent-identity-and-trust.md) - PKI, certificates, ZKPs, and trust mechanisms for agents
 - [MAESTRO Threat Framework](ietf-draft-narajala-ans/maestro-threat-framework.md) - OWASP seven-layer threat modeling framework for multi-agent systems
+- [Agent Scaffolds](arxiv-2510-11977/agent-scaffolds.md) - Task-specific vs. generalist scaffolds and their cost-accuracy tradeoffs
+- [Agent Shortcuts and Gaming](arxiv-2510-11977/agent-shortcuts-and-gaming.md) - Benchmark exploitation behaviors uncovered through log analysis
+- [Agent Evaluation Infrastructure](arxiv-2510-11977/agent-evaluation-infrastructure.md) - Engineering challenges of standardized agent evaluation at scale
+
+### Agent-First Data Systems
+- [Agentic Speculation](agent-first-data-systems/agentic-speculation.md) - High-throughput exploratory querying by LLM agents to compensate for lack of data grounding
+- [Agent-First Data Systems Architecture](agent-first-data-systems/agent-first-data-systems-architecture.md) - Proposed database redesign with probes, probe optimizer, and agentic memory
+- [Probes and Briefs](agent-first-data-systems/probes-and-briefs.md) - Beyond-SQL query interface with natural language intent and phase-aware approximation
+- [Probe Optimization](agent-first-data-systems/probe-optimization.md) - Satisficing, multi-query optimization, and cross-turn strategies for agent workloads
+- [Agentic Memory Store](agent-first-data-systems/agentic-memory-store.md) - Persistent semantic cache for agent grounding and metadata
+- [Branched Updates](agent-first-data-systems/branched-updates.md) - Multi-world transactions with copy-on-write for speculative agent writes
+- [Sleeper Agents (Proactive Data Systems)](agent-first-data-systems/sleeper-agents.md) - In-database agents providing grounding feedback and cost steering
 
 ### Fine-Tuning and Training
 <!-- LoRA, RLHF, GRPO, dataset preparation -->
@@ -27,7 +39,31 @@ Total articles: 10
 <!-- Safety, content filtering, bias mitigation -->
 
 ### Benchmarking and Evaluation
-<!-- LLM evaluation methods, benchmarks, metrics -->
+- [Holistic Agent Leaderboard (HAL)](arxiv-2510-11977/holistic-agent-leaderboard.md) - Unified evaluation framework for reproducible, cost-controlled agent benchmarking
+- [Agent Evaluation Benchmarks](arxiv-2510-11977/agent-evaluation-benchmarks.md) - 9 benchmarks across 4 domains: coding, web, science, customer service
+- [Pareto Frontier in Agent Evaluation](arxiv-2510-11977/pareto-frontier-in-agent-evaluation.md) - Cost-accuracy tradeoff analysis showing steep, sparse frontiers
+- [Reasoning Effort Tradeoffs](arxiv-2510-11977/reasoning-effort-tradeoffs.md) - Why more reasoning doesn't always improve agent accuracy
+- [Automated Agent Log Analysis](arxiv-2510-11977/automated-agent-log-analysis.md) - Docent-based systematic behavioral analysis of agent execution traces
+
+### LLM-Based Code Evolution
+- [SATLUTION Framework](arxiv-2509-07367/satlution-framework.md) - First repository-scale self-evolving coding framework for SAT solving
+- [LLM Code Evolution](arxiv-2509-07367/llm-code-evolution.md) - Paradigm of using LLMs in iterative loops to autonomously refine code
+- [Repository-Scale Code Evolution](arxiv-2509-07367/repository-scale-code-evolution.md) - Extending code evolution from single files to full repositories
+- [Evolutionary Coding Agents](arxiv-2509-07367/evolutionary-coding-agents.md) - Planning + Coding dual-agent architecture for iterative code improvement
+- [Self-Evolving Rule Systems](arxiv-2509-07367/self-evolving-rule-systems.md) - Static + dynamic rule architectures that co-evolve with code
+- [Verification Pipelines for Code Evolution](arxiv-2509-07367/verification-pipelines-for-code-evolution.md) - Two-stage correctness checking with formal proof validation
+
+### Combinatorial Optimization
+- [Boolean Satisfiability (SAT)](arxiv-2509-07367/boolean-satisfiability.md) - The canonical NP-complete problem, CDCL solvers, and SAT Competition
+- [Multi-Armed Bandit Heuristic Tuning](arxiv-2509-07367/multi-armed-bandit-heuristic-tuning.md) - Bandit-based dynamic selection of solver heuristics at runtime
+
+### Economics of Organization
+- [Transaction Costs](coase-nature-of-the-firm/transaction-costs.md) - Costs of using the price mechanism that explain why firms exist
+- [Theory of the Firm](coase-nature-of-the-firm/theory-of-the-firm.md) - Coase's 1937 definition of the firm as the supersession of the price mechanism
+- [Price Mechanism vs. Entrepreneurial Coordination](coase-nature-of-the-firm/price-mechanism-vs-entrepreneurial-coordination.md) - Two alternative methods of organizing production
+- [Firm Size Determinants](coase-nature-of-the-firm/firm-size-determinants.md) - Forces limiting firm growth and creating equilibrium boundaries
+- [Vertical Integration and Combination](coase-nature-of-the-firm/vertical-integration-and-combination.md) - How firms expand by internalizing market transactions
+- [Knight's Uncertainty Theory of the Firm](coase-nature-of-the-firm/knights-uncertainty-theory.md) - Frank Knight's competing theory and Coase's critique
 
 ### GenAI Applications
 <!-- Real-world apps, demos, tools built with LLMs -->
@@ -48,3 +84,7 @@ Total articles: 10
 ## Source Summaries
 - [Naur: Programming as Theory Building](naur-programming-as-theory-building/summary-naur-programming-as-theory-building.md)
 - [IETF: Agent Name Service (ANS) Draft](ietf-draft-narajala-ans/summary-ietf-draft-narajala-ans.md)
+- [Agent-First Data Systems (UC Berkeley)](agent-first-data-systems/summary-agent-first-data-systems.md)
+- [HAL: Holistic Agent Leaderboard](arxiv-2510-11977/summary-arxiv-2510-11977.md)
+- [SATLUTION: Autonomous Code Evolution Meets NP-Completeness](arxiv-2509-07367/summary-arxiv-2509-07367.md)
+- [Coase: The Nature of the Firm (1937)](coase-nature-of-the-firm/summary-coase-nature-of-the-firm.md)

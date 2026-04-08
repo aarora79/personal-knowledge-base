@@ -3,7 +3,7 @@ title: Agent Communication Protocols
 created: 2026-04-07
 updated: 2026-04-07
 sources: [raw/20260407-ietf-draft-narajala-ans.md]
-related: [agent-name-service](agent-name-service.md), [agent-discovery](agent-discovery.md), [agent-identity-and-trust](agent-identity-and-trust.md)
+related: [agent-name-service](agent-name-service.md), [agent-discovery](agent-discovery.md), [agent-identity-and-trust](agent-identity-and-trust.md), [Agent Scaffolds](../arxiv-2510-11977/agent-scaffolds.md)
 tags: [a2a, mcp, acp, agent-protocols, interoperability, ai-agents, multi-agent-systems]
 ---
 

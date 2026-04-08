@@ -1,6 +1,474 @@
 {
   "nodes": [
     {
+      "id": "agent-first-data-systems/agent-first-data-systems-architecture",
+      "title": "Agent-First Data Systems Architecture",
+      "file": "wiki/agent-first-data-systems/agent-first-data-systems-architecture.md",
+      "tags": [
+        "agent-first-data-systems",
+        "data-systems-architecture",
+        "ai-agents",
+        "database-design",
+        "llm-workloads"
+      ],
+      "source_folder": "agent-first-data-systems",
+      "type": "article"
+    },
+    {
+      "id": "agent-first-data-systems/agentic-memory-store",
+      "title": "Agentic Memory Store",
+      "file": "wiki/agent-first-data-systems/agentic-memory-store.md",
+      "tags": [
+        "agentic-memory",
+        "semantic-cache",
+        "data-systems",
+        "agent-grounding",
+        "metadata-management",
+        "ai-agents"
+      ],
+      "source_folder": "agent-first-data-systems",
+      "type": "article"
+    },
+    {
+      "id": "agent-first-data-systems/agentic-speculation",
+      "title": "Agentic Speculation",
+      "file": "wiki/agent-first-data-systems/agentic-speculation.md",
+      "tags": [
+        "agentic-speculation",
+        "ai-agents",
+        "data-systems",
+        "llm-workloads",
+        "query-optimization"
+      ],
+      "source_folder": "agent-first-data-systems",
+      "type": "article"
+    },
+    {
+      "id": "agent-first-data-systems/branched-updates",
+      "title": "Branched Updates",
+      "file": "wiki/agent-first-data-systems/branched-updates.md",
+      "tags": [
+        "branched-updates",
+        "multi-world-transactions",
+        "copy-on-write",
+        "database-transactions",
+        "ai-agents",
+        "speculative-execution"
+      ],
+      "source_folder": "agent-first-data-systems",
+      "type": "article"
+    },
+    {
+      "id": "agent-first-data-systems/probe-optimization",
+      "title": "Probe Optimization",
+      "file": "wiki/agent-first-data-systems/probe-optimization.md",
+      "tags": [
+        "probe-optimization",
+        "query-optimization",
+        "approximate-query-processing",
+        "multi-query-optimization",
+        "ai-agents",
+        "data-systems"
+      ],
+      "source_folder": "agent-first-data-systems",
+      "type": "article"
+    },
+    {
+      "id": "agent-first-data-systems/probes-and-briefs",
+      "title": "Probes and Briefs",
+      "file": "wiki/agent-first-data-systems/probes-and-briefs.md",
+      "tags": [
+        "probes",
+        "query-interface",
+        "agent-database-interaction",
+        "natural-language-queries",
+        "ai-agents"
+      ],
+      "source_folder": "agent-first-data-systems",
+      "type": "article"
+    },
+    {
+      "id": "agent-first-data-systems/sleeper-agents",
+      "title": "Sleeper Agents (Proactive Data Systems)",
+      "file": "wiki/agent-first-data-systems/sleeper-agents.md",
+      "tags": [
+        "sleeper-agents",
+        "proactive-data-systems",
+        "agent-steering",
+        "grounding-feedback",
+        "ai-agents",
+        "data-systems"
+      ],
+      "source_folder": "agent-first-data-systems",
+      "type": "article"
+    },
+    {
+      "id": "agent-first-data-systems/summary-agent-first-data-systems",
+      "title": "Source Summary: Supporting Our AI Overlords - Redesigning Data Systems to be Agent-First",
+      "file": "wiki/agent-first-data-systems/summary-agent-first-data-systems.md",
+      "tags": [],
+      "source_folder": "agent-first-data-systems",
+      "type": "summary"
+    },
+    {
+      "id": "arxiv-2509-07367/boolean-satisfiability",
+      "title": "Boolean Satisfiability (SAT)",
+      "file": "wiki/arxiv-2509-07367/boolean-satisfiability.md",
+      "tags": [
+        "sat-solving",
+        "np-complete",
+        "cdcl",
+        "computational-complexity",
+        "combinatorial-optimization"
+      ],
+      "source_folder": "arxiv-2509-07367",
+      "type": "article"
+    },
+    {
+      "id": "arxiv-2509-07367/evolutionary-coding-agents",
+      "title": "Evolutionary Coding Agents",
+      "file": "wiki/arxiv-2509-07367/evolutionary-coding-agents.md",
+      "tags": [
+        "coding-agents",
+        "llm-agents",
+        "multi-agent-systems",
+        "planning-agents",
+        "ai-agents",
+        "autonomous-coding"
+      ],
+      "source_folder": "arxiv-2509-07367",
+      "type": "article"
+    },
+    {
+      "id": "arxiv-2509-07367/llm-code-evolution",
+      "title": "LLM Code Evolution",
+      "file": "wiki/arxiv-2509-07367/llm-code-evolution.md",
+      "tags": [
+        "llm-code-evolution",
+        "alphaevolve",
+        "code-generation",
+        "autonomous-coding",
+        "ai-agents"
+      ],
+      "source_folder": "arxiv-2509-07367",
+      "type": "article"
+    },
+    {
+      "id": "arxiv-2509-07367/multi-armed-bandit-heuristic-tuning",
+      "title": "Multi-Armed Bandit Heuristic Tuning",
+      "file": "wiki/arxiv-2509-07367/multi-armed-bandit-heuristic-tuning.md",
+      "tags": [
+        "multi-armed-bandit",
+        "heuristic-optimization",
+        "sat-solving",
+        "adaptive-algorithms",
+        "reinforcement-learning"
+      ],
+      "source_folder": "arxiv-2509-07367",
+      "type": "article"
+    },
+    {
+      "id": "arxiv-2509-07367/repository-scale-code-evolution",
+      "title": "Repository-Scale Code Evolution",
+      "file": "wiki/arxiv-2509-07367/repository-scale-code-evolution.md",
+      "tags": [
+        "repository-scale",
+        "code-evolution",
+        "software-engineering",
+        "llm-agents",
+        "autonomous-coding"
+      ],
+      "source_folder": "arxiv-2509-07367",
+      "type": "article"
+    },
+    {
+      "id": "arxiv-2509-07367/satlution-framework",
+      "title": "SATLUTION Framework",
+      "file": "wiki/arxiv-2509-07367/satlution-framework.md",
+      "tags": [
+        "satlution",
+        "sat-solving",
+        "llm-agents",
+        "code-evolution",
+        "autonomous-coding",
+        "np-complete"
+      ],
+      "source_folder": "arxiv-2509-07367",
+      "type": "article"
+    },
+    {
+      "id": "arxiv-2509-07367/self-evolving-rule-systems",
+      "title": "Self-Evolving Rule Systems",
+      "file": "wiki/arxiv-2509-07367/self-evolving-rule-systems.md",
+      "tags": [
+        "rule-systems",
+        "self-evolution",
+        "agent-guardrails",
+        "llm-agents",
+        "code-evolution",
+        "knowledge-management"
+      ],
+      "source_folder": "arxiv-2509-07367",
+      "type": "article"
+    },
+    {
+      "id": "arxiv-2509-07367/summary-arxiv-2509-07367",
+      "title": "Source Summary: SATLUTION - Autonomous Code Evolution Meets NP-Completeness",
+      "file": "wiki/arxiv-2509-07367/summary-arxiv-2509-07367.md",
+      "tags": [],
+      "source_folder": "arxiv-2509-07367",
+      "type": "summary"
+    },
+    {
+      "id": "arxiv-2509-07367/verification-pipelines-for-code-evolution",
+      "title": "Verification Pipelines for Code Evolution",
+      "file": "wiki/arxiv-2509-07367/verification-pipelines-for-code-evolution.md",
+      "tags": [
+        "verification",
+        "correctness",
+        "code-evolution",
+        "formal-verification",
+        "drat-proofs",
+        "testing-pipelines"
+      ],
+      "source_folder": "arxiv-2509-07367",
+      "type": "article"
+    },
+    {
+      "id": "arxiv-2510-11977/agent-evaluation-benchmarks",
+      "title": "Agent Evaluation Benchmarks",
+      "file": "wiki/arxiv-2510-11977/agent-evaluation-benchmarks.md",
+      "tags": [
+        "benchmarks",
+        "agent-evaluation",
+        "swe-bench",
+        "gaia",
+        "tau-bench",
+        "ai-agents",
+        "evaluation-methodology",
+        "multi-agent-systems"
+      ],
+      "source_folder": "arxiv-2510-11977",
+      "type": "article"
+    },
+    {
+      "id": "arxiv-2510-11977/agent-evaluation-infrastructure",
+      "title": "Agent Evaluation Infrastructure",
+      "file": "wiki/arxiv-2510-11977/agent-evaluation-infrastructure.md",
+      "tags": [
+        "evaluation-infrastructure",
+        "distributed-systems",
+        "reproducibility",
+        "orchestration",
+        "litellm",
+        "weave",
+        "ai-agents"
+      ],
+      "source_folder": "arxiv-2510-11977",
+      "type": "article"
+    },
+    {
+      "id": "arxiv-2510-11977/agent-scaffolds",
+      "title": "Agent Scaffolds",
+      "file": "wiki/arxiv-2510-11977/agent-scaffolds.md",
+      "tags": [
+        "agent-scaffolds",
+        "task-specific",
+        "generalist",
+        "smolagents",
+        "swe-agent",
+        "ai-agents",
+        "agent-architecture",
+        "multi-agent-systems"
+      ],
+      "source_folder": "arxiv-2510-11977",
+      "type": "article"
+    },
+    {
+      "id": "arxiv-2510-11977/agent-shortcuts-and-gaming",
+      "title": "Agent Shortcuts and Gaming",
+      "file": "wiki/arxiv-2510-11977/agent-shortcuts-and-gaming.md",
+      "tags": [
+        "agent-shortcuts",
+        "benchmark-gaming",
+        "data-leakage",
+        "evaluation-integrity",
+        "catastrophic-actions",
+        "ai-agents",
+        "ai-safety",
+        "multi-agent-systems"
+      ],
+      "source_folder": "arxiv-2510-11977",
+      "type": "article"
+    },
+    {
+      "id": "arxiv-2510-11977/automated-agent-log-analysis",
+      "title": "Automated Agent Log Analysis",
+      "file": "wiki/arxiv-2510-11977/automated-agent-log-analysis.md",
+      "tags": [
+        "log-analysis",
+        "docent",
+        "agent-behavior",
+        "evaluation-methodology",
+        "rubric-analysis",
+        "ai-agents",
+        "observability"
+      ],
+      "source_folder": "arxiv-2510-11977",
+      "type": "article"
+    },
+    {
+      "id": "arxiv-2510-11977/holistic-agent-leaderboard",
+      "title": "Holistic Agent Leaderboard (HAL)",
+      "file": "wiki/arxiv-2510-11977/holistic-agent-leaderboard.md",
+      "tags": [
+        "hal",
+        "agent-evaluation",
+        "leaderboard",
+        "benchmarking",
+        "reproducibility",
+        "ai-agents",
+        "multi-agent-systems"
+      ],
+      "source_folder": "arxiv-2510-11977",
+      "type": "article"
+    },
+    {
+      "id": "arxiv-2510-11977/pareto-frontier-in-agent-evaluation",
+      "title": "Pareto Frontier in Agent Evaluation",
+      "file": "wiki/arxiv-2510-11977/pareto-frontier-in-agent-evaluation.md",
+      "tags": [
+        "pareto-frontier",
+        "cost-accuracy",
+        "agent-evaluation",
+        "model-selection",
+        "inference-cost",
+        "ai-agents",
+        "benchmarking"
+      ],
+      "source_folder": "arxiv-2510-11977",
+      "type": "article"
+    },
+    {
+      "id": "arxiv-2510-11977/reasoning-effort-tradeoffs",
+      "title": "Reasoning Effort Tradeoffs",
+      "file": "wiki/arxiv-2510-11977/reasoning-effort-tradeoffs.md",
+      "tags": [
+        "reasoning-effort",
+        "inference-time-compute",
+        "test-time-compute",
+        "accuracy-tradeoffs",
+        "ai-agents",
+        "benchmarking"
+      ],
+      "source_folder": "arxiv-2510-11977",
+      "type": "article"
+    },
+    {
+      "id": "arxiv-2510-11977/summary-arxiv-2510-11977",
+      "title": "Source Summary: Holistic Agent Leaderboard (HAL)",
+      "file": "wiki/arxiv-2510-11977/summary-arxiv-2510-11977.md",
+      "tags": [],
+      "source_folder": "arxiv-2510-11977",
+      "type": "summary"
+    },
+    {
+      "id": "coase-nature-of-the-firm/firm-size-determinants",
+      "title": "Firm Size Determinants",
+      "file": "wiki/coase-nature-of-the-firm/firm-size-determinants.md",
+      "tags": [
+        "firm-size",
+        "diminishing-returns",
+        "management",
+        "economics",
+        "theory-of-the-firm",
+        "organizational-boundaries"
+      ],
+      "source_folder": "coase-nature-of-the-firm",
+      "type": "article"
+    },
+    {
+      "id": "coase-nature-of-the-firm/knights-uncertainty-theory",
+      "title": "Knight's Uncertainty Theory of the Firm",
+      "file": "wiki/coase-nature-of-the-firm/knights-uncertainty-theory.md",
+      "tags": [
+        "frank-knight",
+        "uncertainty",
+        "risk",
+        "entrepreneurship",
+        "economics",
+        "theory-of-the-firm"
+      ],
+      "source_folder": "coase-nature-of-the-firm",
+      "type": "article"
+    },
+    {
+      "id": "coase-nature-of-the-firm/price-mechanism-vs-entrepreneurial-coordination",
+      "title": "Price Mechanism vs. Entrepreneurial Coordination",
+      "file": "wiki/coase-nature-of-the-firm/price-mechanism-vs-entrepreneurial-coordination.md",
+      "tags": [
+        "price-mechanism",
+        "coordination",
+        "entrepreneurship",
+        "resource-allocation",
+        "economics",
+        "theory-of-the-firm"
+      ],
+      "source_folder": "coase-nature-of-the-firm",
+      "type": "article"
+    },
+    {
+      "id": "coase-nature-of-the-firm/summary-coase-nature-of-the-firm",
+      "title": "Source Summary: The Nature of the Firm (R. H. Coase, 1937)",
+      "file": "wiki/coase-nature-of-the-firm/summary-coase-nature-of-the-firm.md",
+      "tags": [],
+      "source_folder": "coase-nature-of-the-firm",
+      "type": "summary"
+    },
+    {
+      "id": "coase-nature-of-the-firm/theory-of-the-firm",
+      "title": "Theory of the Firm",
+      "file": "wiki/coase-nature-of-the-firm/theory-of-the-firm.md",
+      "tags": [
+        "theory-of-the-firm",
+        "economics",
+        "institutional-economics",
+        "organizational-theory",
+        "coase"
+      ],
+      "source_folder": "coase-nature-of-the-firm",
+      "type": "article"
+    },
+    {
+      "id": "coase-nature-of-the-firm/transaction-costs",
+      "title": "Transaction Costs",
+      "file": "wiki/coase-nature-of-the-firm/transaction-costs.md",
+      "tags": [
+        "transaction-costs",
+        "economics",
+        "theory-of-the-firm",
+        "institutional-economics",
+        "market-failure"
+      ],
+      "source_folder": "coase-nature-of-the-firm",
+      "type": "article"
+    },
+    {
+      "id": "coase-nature-of-the-firm/vertical-integration-and-combination",
+      "title": "Vertical Integration and Combination",
+      "file": "wiki/coase-nature-of-the-firm/vertical-integration-and-combination.md",
+      "tags": [
+        "vertical-integration",
+        "combination",
+        "firm-boundaries",
+        "economics",
+        "theory-of-the-firm",
+        "industrial-organization"
+      ],
+      "source_folder": "coase-nature-of-the-firm",
+      "type": "article"
+    },
+    {
       "id": "ietf-draft-narajala-ans/agent-communication-protocols",
       "title": "Agent Communication Protocols",
       "file": "wiki/ietf-draft-narajala-ans/agent-communication-protocols.md",
@@ -172,6 +640,681 @@
   ],
   "edges": [
     {
+      "source": "agent-first-data-systems/agent-first-data-systems-architecture",
+      "target": "agent-first-data-systems/agentic-speculation",
+      "type": "related"
+    },
+    {
+      "source": "agent-first-data-systems/agent-first-data-systems-architecture",
+      "target": "agent-first-data-systems/probes-and-briefs",
+      "type": "related"
+    },
+    {
+      "source": "agent-first-data-systems/agent-first-data-systems-architecture",
+      "target": "agent-first-data-systems/probe-optimization",
+      "type": "related"
+    },
+    {
+      "source": "agent-first-data-systems/agent-first-data-systems-architecture",
+      "target": "agent-first-data-systems/agentic-memory-store",
+      "type": "related"
+    },
+    {
+      "source": "agent-first-data-systems/agent-first-data-systems-architecture",
+      "target": "agent-first-data-systems/branched-updates",
+      "type": "related"
+    },
+    {
+      "source": "agent-first-data-systems/agent-first-data-systems-architecture",
+      "target": "agent-first-data-systems/sleeper-agents",
+      "type": "related"
+    },
+    {
+      "source": "agent-first-data-systems/agent-first-data-systems-architecture",
+      "target": "arxiv-2510-11977/agent-evaluation-benchmarks",
+      "type": "related"
+    },
+    {
+      "source": "agent-first-data-systems/agent-first-data-systems-architecture",
+      "target": "agent-first-data-systems/summary-agent-first-data-systems",
+      "type": "source"
+    },
+    {
+      "source": "agent-first-data-systems/agentic-memory-store",
+      "target": "agent-first-data-systems/agent-first-data-systems-architecture",
+      "type": "related"
+    },
+    {
+      "source": "agent-first-data-systems/agentic-memory-store",
+      "target": "agent-first-data-systems/agentic-speculation",
+      "type": "related"
+    },
+    {
+      "source": "agent-first-data-systems/agentic-memory-store",
+      "target": "agent-first-data-systems/probe-optimization",
+      "type": "related"
+    },
+    {
+      "source": "agent-first-data-systems/agentic-memory-store",
+      "target": "agent-first-data-systems/sleeper-agents",
+      "type": "related"
+    },
+    {
+      "source": "agent-first-data-systems/agentic-memory-store",
+      "target": "agent-first-data-systems/summary-agent-first-data-systems",
+      "type": "source"
+    },
+    {
+      "source": "agent-first-data-systems/agentic-speculation",
+      "target": "agent-first-data-systems/agent-first-data-systems-architecture",
+      "type": "related"
+    },
+    {
+      "source": "agent-first-data-systems/agentic-speculation",
+      "target": "agent-first-data-systems/probes-and-briefs",
+      "type": "related"
+    },
+    {
+      "source": "agent-first-data-systems/agentic-speculation",
+      "target": "agent-first-data-systems/probe-optimization",
+      "type": "related"
+    },
+    {
+      "source": "agent-first-data-systems/agentic-speculation",
+      "target": "ietf-draft-narajala-ans/agent-discovery",
+      "type": "related"
+    },
+    {
+      "source": "agent-first-data-systems/agentic-speculation",
+      "target": "agent-first-data-systems/summary-agent-first-data-systems",
+      "type": "source"
+    },
+    {
+      "source": "agent-first-data-systems/branched-updates",
+      "target": "agent-first-data-systems/agent-first-data-systems-architecture",
+      "type": "related"
+    },
+    {
+      "source": "agent-first-data-systems/branched-updates",
+      "target": "agent-first-data-systems/agentic-speculation",
+      "type": "related"
+    },
+    {
+      "source": "agent-first-data-systems/branched-updates",
+      "target": "agent-first-data-systems/agentic-memory-store",
+      "type": "related"
+    },
+    {
+      "source": "agent-first-data-systems/branched-updates",
+      "target": "agent-first-data-systems/summary-agent-first-data-systems",
+      "type": "source"
+    },
+    {
+      "source": "agent-first-data-systems/probe-optimization",
+      "target": "agent-first-data-systems/agentic-speculation",
+      "type": "related"
+    },
+    {
+      "source": "agent-first-data-systems/probe-optimization",
+      "target": "agent-first-data-systems/probes-and-briefs",
+      "type": "related"
+    },
+    {
+      "source": "agent-first-data-systems/probe-optimization",
+      "target": "agent-first-data-systems/agent-first-data-systems-architecture",
+      "type": "related"
+    },
+    {
+      "source": "agent-first-data-systems/probe-optimization",
+      "target": "agent-first-data-systems/agentic-memory-store",
+      "type": "related"
+    },
+    {
+      "source": "agent-first-data-systems/probe-optimization",
+      "target": "agent-first-data-systems/summary-agent-first-data-systems",
+      "type": "source"
+    },
+    {
+      "source": "agent-first-data-systems/probes-and-briefs",
+      "target": "agent-first-data-systems/agentic-speculation",
+      "type": "related"
+    },
+    {
+      "source": "agent-first-data-systems/probes-and-briefs",
+      "target": "agent-first-data-systems/agent-first-data-systems-architecture",
+      "type": "related"
+    },
+    {
+      "source": "agent-first-data-systems/probes-and-briefs",
+      "target": "agent-first-data-systems/probe-optimization",
+      "type": "related"
+    },
+    {
+      "source": "agent-first-data-systems/probes-and-briefs",
+      "target": "agent-first-data-systems/sleeper-agents",
+      "type": "related"
+    },
+    {
+      "source": "agent-first-data-systems/probes-and-briefs",
+      "target": "agent-first-data-systems/summary-agent-first-data-systems",
+      "type": "source"
+    },
+    {
+      "source": "agent-first-data-systems/sleeper-agents",
+      "target": "agent-first-data-systems/agent-first-data-systems-architecture",
+      "type": "related"
+    },
+    {
+      "source": "agent-first-data-systems/sleeper-agents",
+      "target": "agent-first-data-systems/probes-and-briefs",
+      "type": "related"
+    },
+    {
+      "source": "agent-first-data-systems/sleeper-agents",
+      "target": "agent-first-data-systems/agentic-memory-store",
+      "type": "related"
+    },
+    {
+      "source": "agent-first-data-systems/sleeper-agents",
+      "target": "agent-first-data-systems/agentic-speculation",
+      "type": "related"
+    },
+    {
+      "source": "agent-first-data-systems/sleeper-agents",
+      "target": "agent-first-data-systems/summary-agent-first-data-systems",
+      "type": "source"
+    },
+    {
+      "source": "arxiv-2509-07367/boolean-satisfiability",
+      "target": "arxiv-2509-07367/satlution-framework",
+      "type": "related"
+    },
+    {
+      "source": "arxiv-2509-07367/boolean-satisfiability",
+      "target": "arxiv-2509-07367/multi-armed-bandit-heuristic-tuning",
+      "type": "related"
+    },
+    {
+      "source": "arxiv-2509-07367/boolean-satisfiability",
+      "target": "arxiv-2509-07367/summary-arxiv-2509-07367",
+      "type": "source"
+    },
+    {
+      "source": "arxiv-2509-07367/evolutionary-coding-agents",
+      "target": "arxiv-2509-07367/satlution-framework",
+      "type": "related"
+    },
+    {
+      "source": "arxiv-2509-07367/evolutionary-coding-agents",
+      "target": "arxiv-2509-07367/llm-code-evolution",
+      "type": "related"
+    },
+    {
+      "source": "arxiv-2509-07367/evolutionary-coding-agents",
+      "target": "arxiv-2509-07367/self-evolving-rule-systems",
+      "type": "related"
+    },
+    {
+      "source": "arxiv-2509-07367/evolutionary-coding-agents",
+      "target": "ietf-draft-narajala-ans/agent-communication-protocols",
+      "type": "related"
+    },
+    {
+      "source": "arxiv-2509-07367/evolutionary-coding-agents",
+      "target": "arxiv-2509-07367/summary-arxiv-2509-07367",
+      "type": "source"
+    },
+    {
+      "source": "arxiv-2509-07367/llm-code-evolution",
+      "target": "arxiv-2509-07367/satlution-framework",
+      "type": "related"
+    },
+    {
+      "source": "arxiv-2509-07367/llm-code-evolution",
+      "target": "arxiv-2509-07367/repository-scale-code-evolution",
+      "type": "related"
+    },
+    {
+      "source": "arxiv-2509-07367/llm-code-evolution",
+      "target": "arxiv-2509-07367/evolutionary-coding-agents",
+      "type": "related"
+    },
+    {
+      "source": "arxiv-2509-07367/llm-code-evolution",
+      "target": "arxiv-2509-07367/summary-arxiv-2509-07367",
+      "type": "source"
+    },
+    {
+      "source": "arxiv-2509-07367/multi-armed-bandit-heuristic-tuning",
+      "target": "arxiv-2509-07367/satlution-framework",
+      "type": "related"
+    },
+    {
+      "source": "arxiv-2509-07367/multi-armed-bandit-heuristic-tuning",
+      "target": "arxiv-2509-07367/boolean-satisfiability",
+      "type": "related"
+    },
+    {
+      "source": "arxiv-2509-07367/multi-armed-bandit-heuristic-tuning",
+      "target": "arxiv-2509-07367/summary-arxiv-2509-07367",
+      "type": "source"
+    },
+    {
+      "source": "arxiv-2509-07367/repository-scale-code-evolution",
+      "target": "arxiv-2509-07367/satlution-framework",
+      "type": "related"
+    },
+    {
+      "source": "arxiv-2509-07367/repository-scale-code-evolution",
+      "target": "arxiv-2509-07367/llm-code-evolution",
+      "type": "related"
+    },
+    {
+      "source": "arxiv-2509-07367/repository-scale-code-evolution",
+      "target": "arxiv-2509-07367/self-evolving-rule-systems",
+      "type": "related"
+    },
+    {
+      "source": "arxiv-2509-07367/repository-scale-code-evolution",
+      "target": "arxiv-2509-07367/verification-pipelines-for-code-evolution",
+      "type": "related"
+    },
+    {
+      "source": "arxiv-2509-07367/repository-scale-code-evolution",
+      "target": "arxiv-2509-07367/summary-arxiv-2509-07367",
+      "type": "source"
+    },
+    {
+      "source": "arxiv-2509-07367/satlution-framework",
+      "target": "arxiv-2509-07367/llm-code-evolution",
+      "type": "related"
+    },
+    {
+      "source": "arxiv-2509-07367/satlution-framework",
+      "target": "arxiv-2509-07367/repository-scale-code-evolution",
+      "type": "related"
+    },
+    {
+      "source": "arxiv-2509-07367/satlution-framework",
+      "target": "arxiv-2509-07367/self-evolving-rule-systems",
+      "type": "related"
+    },
+    {
+      "source": "arxiv-2509-07367/satlution-framework",
+      "target": "arxiv-2509-07367/verification-pipelines-for-code-evolution",
+      "type": "related"
+    },
+    {
+      "source": "arxiv-2509-07367/satlution-framework",
+      "target": "arxiv-2509-07367/boolean-satisfiability",
+      "type": "related"
+    },
+    {
+      "source": "arxiv-2509-07367/satlution-framework",
+      "target": "arxiv-2509-07367/summary-arxiv-2509-07367",
+      "type": "source"
+    },
+    {
+      "source": "arxiv-2509-07367/self-evolving-rule-systems",
+      "target": "arxiv-2509-07367/satlution-framework",
+      "type": "related"
+    },
+    {
+      "source": "arxiv-2509-07367/self-evolving-rule-systems",
+      "target": "arxiv-2509-07367/verification-pipelines-for-code-evolution",
+      "type": "related"
+    },
+    {
+      "source": "arxiv-2509-07367/self-evolving-rule-systems",
+      "target": "arxiv-2509-07367/evolutionary-coding-agents",
+      "type": "related"
+    },
+    {
+      "source": "arxiv-2509-07367/self-evolving-rule-systems",
+      "target": "arxiv-2509-07367/summary-arxiv-2509-07367",
+      "type": "source"
+    },
+    {
+      "source": "arxiv-2509-07367/verification-pipelines-for-code-evolution",
+      "target": "arxiv-2509-07367/satlution-framework",
+      "type": "related"
+    },
+    {
+      "source": "arxiv-2509-07367/verification-pipelines-for-code-evolution",
+      "target": "arxiv-2509-07367/self-evolving-rule-systems",
+      "type": "related"
+    },
+    {
+      "source": "arxiv-2509-07367/verification-pipelines-for-code-evolution",
+      "target": "arxiv-2509-07367/boolean-satisfiability",
+      "type": "related"
+    },
+    {
+      "source": "arxiv-2509-07367/verification-pipelines-for-code-evolution",
+      "target": "arxiv-2509-07367/summary-arxiv-2509-07367",
+      "type": "source"
+    },
+    {
+      "source": "arxiv-2510-11977/agent-evaluation-benchmarks",
+      "target": "arxiv-2510-11977/holistic-agent-leaderboard",
+      "type": "related"
+    },
+    {
+      "source": "arxiv-2510-11977/agent-evaluation-benchmarks",
+      "target": "arxiv-2510-11977/agent-scaffolds",
+      "type": "related"
+    },
+    {
+      "source": "arxiv-2510-11977/agent-evaluation-benchmarks",
+      "target": "arxiv-2510-11977/agent-evaluation-infrastructure",
+      "type": "related"
+    },
+    {
+      "source": "arxiv-2510-11977/agent-evaluation-benchmarks",
+      "target": "agent-first-data-systems/agent-first-data-systems-architecture",
+      "type": "related"
+    },
+    {
+      "source": "arxiv-2510-11977/agent-evaluation-benchmarks",
+      "target": "arxiv-2510-11977/summary-arxiv-2510-11977",
+      "type": "source"
+    },
+    {
+      "source": "arxiv-2510-11977/agent-evaluation-infrastructure",
+      "target": "arxiv-2510-11977/holistic-agent-leaderboard",
+      "type": "related"
+    },
+    {
+      "source": "arxiv-2510-11977/agent-evaluation-infrastructure",
+      "target": "arxiv-2510-11977/agent-evaluation-benchmarks",
+      "type": "related"
+    },
+    {
+      "source": "arxiv-2510-11977/agent-evaluation-infrastructure",
+      "target": "arxiv-2510-11977/agent-scaffolds",
+      "type": "related"
+    },
+    {
+      "source": "arxiv-2510-11977/agent-evaluation-infrastructure",
+      "target": "arxiv-2510-11977/summary-arxiv-2510-11977",
+      "type": "source"
+    },
+    {
+      "source": "arxiv-2510-11977/agent-scaffolds",
+      "target": "arxiv-2510-11977/holistic-agent-leaderboard",
+      "type": "related"
+    },
+    {
+      "source": "arxiv-2510-11977/agent-scaffolds",
+      "target": "arxiv-2510-11977/agent-evaluation-benchmarks",
+      "type": "related"
+    },
+    {
+      "source": "arxiv-2510-11977/agent-scaffolds",
+      "target": "arxiv-2510-11977/pareto-frontier-in-agent-evaluation",
+      "type": "related"
+    },
+    {
+      "source": "arxiv-2510-11977/agent-scaffolds",
+      "target": "ietf-draft-narajala-ans/agent-communication-protocols",
+      "type": "related"
+    },
+    {
+      "source": "arxiv-2510-11977/agent-scaffolds",
+      "target": "arxiv-2510-11977/summary-arxiv-2510-11977",
+      "type": "source"
+    },
+    {
+      "source": "arxiv-2510-11977/agent-shortcuts-and-gaming",
+      "target": "arxiv-2510-11977/automated-agent-log-analysis",
+      "type": "related"
+    },
+    {
+      "source": "arxiv-2510-11977/agent-shortcuts-and-gaming",
+      "target": "arxiv-2510-11977/holistic-agent-leaderboard",
+      "type": "related"
+    },
+    {
+      "source": "arxiv-2510-11977/agent-shortcuts-and-gaming",
+      "target": "arxiv-2510-11977/agent-evaluation-benchmarks",
+      "type": "related"
+    },
+    {
+      "source": "arxiv-2510-11977/agent-shortcuts-and-gaming",
+      "target": "ietf-draft-narajala-ans/maestro-threat-framework",
+      "type": "related"
+    },
+    {
+      "source": "arxiv-2510-11977/agent-shortcuts-and-gaming",
+      "target": "arxiv-2510-11977/summary-arxiv-2510-11977",
+      "type": "source"
+    },
+    {
+      "source": "arxiv-2510-11977/automated-agent-log-analysis",
+      "target": "arxiv-2510-11977/holistic-agent-leaderboard",
+      "type": "related"
+    },
+    {
+      "source": "arxiv-2510-11977/automated-agent-log-analysis",
+      "target": "arxiv-2510-11977/agent-shortcuts-and-gaming",
+      "type": "related"
+    },
+    {
+      "source": "arxiv-2510-11977/automated-agent-log-analysis",
+      "target": "arxiv-2510-11977/agent-evaluation-benchmarks",
+      "type": "related"
+    },
+    {
+      "source": "arxiv-2510-11977/automated-agent-log-analysis",
+      "target": "arxiv-2510-11977/summary-arxiv-2510-11977",
+      "type": "source"
+    },
+    {
+      "source": "arxiv-2510-11977/holistic-agent-leaderboard",
+      "target": "arxiv-2510-11977/agent-evaluation-benchmarks",
+      "type": "related"
+    },
+    {
+      "source": "arxiv-2510-11977/holistic-agent-leaderboard",
+      "target": "arxiv-2510-11977/agent-scaffolds",
+      "type": "related"
+    },
+    {
+      "source": "arxiv-2510-11977/holistic-agent-leaderboard",
+      "target": "arxiv-2510-11977/pareto-frontier-in-agent-evaluation",
+      "type": "related"
+    },
+    {
+      "source": "arxiv-2510-11977/holistic-agent-leaderboard",
+      "target": "arxiv-2510-11977/automated-agent-log-analysis",
+      "type": "related"
+    },
+    {
+      "source": "arxiv-2510-11977/holistic-agent-leaderboard",
+      "target": "arxiv-2510-11977/agent-evaluation-infrastructure",
+      "type": "related"
+    },
+    {
+      "source": "arxiv-2510-11977/holistic-agent-leaderboard",
+      "target": "ietf-draft-narajala-ans/agent-discovery",
+      "type": "related"
+    },
+    {
+      "source": "arxiv-2510-11977/holistic-agent-leaderboard",
+      "target": "arxiv-2510-11977/summary-arxiv-2510-11977",
+      "type": "source"
+    },
+    {
+      "source": "arxiv-2510-11977/pareto-frontier-in-agent-evaluation",
+      "target": "arxiv-2510-11977/holistic-agent-leaderboard",
+      "type": "related"
+    },
+    {
+      "source": "arxiv-2510-11977/pareto-frontier-in-agent-evaluation",
+      "target": "arxiv-2510-11977/agent-scaffolds",
+      "type": "related"
+    },
+    {
+      "source": "arxiv-2510-11977/pareto-frontier-in-agent-evaluation",
+      "target": "arxiv-2510-11977/reasoning-effort-tradeoffs",
+      "type": "related"
+    },
+    {
+      "source": "arxiv-2510-11977/pareto-frontier-in-agent-evaluation",
+      "target": "arxiv-2510-11977/summary-arxiv-2510-11977",
+      "type": "source"
+    },
+    {
+      "source": "arxiv-2510-11977/reasoning-effort-tradeoffs",
+      "target": "arxiv-2510-11977/holistic-agent-leaderboard",
+      "type": "related"
+    },
+    {
+      "source": "arxiv-2510-11977/reasoning-effort-tradeoffs",
+      "target": "arxiv-2510-11977/pareto-frontier-in-agent-evaluation",
+      "type": "related"
+    },
+    {
+      "source": "arxiv-2510-11977/reasoning-effort-tradeoffs",
+      "target": "arxiv-2510-11977/agent-scaffolds",
+      "type": "related"
+    },
+    {
+      "source": "arxiv-2510-11977/reasoning-effort-tradeoffs",
+      "target": "arxiv-2510-11977/summary-arxiv-2510-11977",
+      "type": "source"
+    },
+    {
+      "source": "coase-nature-of-the-firm/firm-size-determinants",
+      "target": "coase-nature-of-the-firm/transaction-costs",
+      "type": "related"
+    },
+    {
+      "source": "coase-nature-of-the-firm/firm-size-determinants",
+      "target": "coase-nature-of-the-firm/theory-of-the-firm",
+      "type": "related"
+    },
+    {
+      "source": "coase-nature-of-the-firm/firm-size-determinants",
+      "target": "coase-nature-of-the-firm/vertical-integration-and-combination",
+      "type": "related"
+    },
+    {
+      "source": "coase-nature-of-the-firm/firm-size-determinants",
+      "target": "coase-nature-of-the-firm/price-mechanism-vs-entrepreneurial-coordination",
+      "type": "related"
+    },
+    {
+      "source": "coase-nature-of-the-firm/firm-size-determinants",
+      "target": "coase-nature-of-the-firm/summary-coase-nature-of-the-firm",
+      "type": "source"
+    },
+    {
+      "source": "coase-nature-of-the-firm/knights-uncertainty-theory",
+      "target": "coase-nature-of-the-firm/theory-of-the-firm",
+      "type": "related"
+    },
+    {
+      "source": "coase-nature-of-the-firm/knights-uncertainty-theory",
+      "target": "coase-nature-of-the-firm/transaction-costs",
+      "type": "related"
+    },
+    {
+      "source": "coase-nature-of-the-firm/knights-uncertainty-theory",
+      "target": "coase-nature-of-the-firm/price-mechanism-vs-entrepreneurial-coordination",
+      "type": "related"
+    },
+    {
+      "source": "coase-nature-of-the-firm/knights-uncertainty-theory",
+      "target": "coase-nature-of-the-firm/summary-coase-nature-of-the-firm",
+      "type": "source"
+    },
+    {
+      "source": "coase-nature-of-the-firm/price-mechanism-vs-entrepreneurial-coordination",
+      "target": "coase-nature-of-the-firm/transaction-costs",
+      "type": "related"
+    },
+    {
+      "source": "coase-nature-of-the-firm/price-mechanism-vs-entrepreneurial-coordination",
+      "target": "coase-nature-of-the-firm/theory-of-the-firm",
+      "type": "related"
+    },
+    {
+      "source": "coase-nature-of-the-firm/price-mechanism-vs-entrepreneurial-coordination",
+      "target": "coase-nature-of-the-firm/firm-size-determinants",
+      "type": "related"
+    },
+    {
+      "source": "coase-nature-of-the-firm/price-mechanism-vs-entrepreneurial-coordination",
+      "target": "coase-nature-of-the-firm/summary-coase-nature-of-the-firm",
+      "type": "source"
+    },
+    {
+      "source": "coase-nature-of-the-firm/theory-of-the-firm",
+      "target": "coase-nature-of-the-firm/transaction-costs",
+      "type": "related"
+    },
+    {
+      "source": "coase-nature-of-the-firm/theory-of-the-firm",
+      "target": "coase-nature-of-the-firm/price-mechanism-vs-entrepreneurial-coordination",
+      "type": "related"
+    },
+    {
+      "source": "coase-nature-of-the-firm/theory-of-the-firm",
+      "target": "coase-nature-of-the-firm/firm-size-determinants",
+      "type": "related"
+    },
+    {
+      "source": "coase-nature-of-the-firm/theory-of-the-firm",
+      "target": "coase-nature-of-the-firm/vertical-integration-and-combination",
+      "type": "related"
+    },
+    {
+      "source": "coase-nature-of-the-firm/theory-of-the-firm",
+      "target": "coase-nature-of-the-firm/summary-coase-nature-of-the-firm",
+      "type": "source"
+    },
+    {
+      "source": "coase-nature-of-the-firm/transaction-costs",
+      "target": "coase-nature-of-the-firm/price-mechanism-vs-entrepreneurial-coordination",
+      "type": "related"
+    },
+    {
+      "source": "coase-nature-of-the-firm/transaction-costs",
+      "target": "coase-nature-of-the-firm/theory-of-the-firm",
+      "type": "related"
+    },
+    {
+      "source": "coase-nature-of-the-firm/transaction-costs",
+      "target": "coase-nature-of-the-firm/firm-size-determinants",
+      "type": "related"
+    },
+    {
+      "source": "coase-nature-of-the-firm/transaction-costs",
+      "target": "coase-nature-of-the-firm/summary-coase-nature-of-the-firm",
+      "type": "source"
+    },
+    {
+      "source": "coase-nature-of-the-firm/vertical-integration-and-combination",
+      "target": "coase-nature-of-the-firm/theory-of-the-firm",
+      "type": "related"
+    },
+    {
+      "source": "coase-nature-of-the-firm/vertical-integration-and-combination",
+      "target": "coase-nature-of-the-firm/firm-size-determinants",
+      "type": "related"
+    },
+    {
+      "source": "coase-nature-of-the-firm/vertical-integration-and-combination",
+      "target": "coase-nature-of-the-firm/transaction-costs",
+      "type": "related"
+    },
+    {
+      "source": "coase-nature-of-the-firm/vertical-integration-and-combination",
+      "target": "coase-nature-of-the-firm/summary-coase-nature-of-the-firm",
+      "type": "source"
+    },
+    {
       "source": "ietf-draft-narajala-ans/agent-communication-protocols",
       "target": "ietf-draft-narajala-ans/agent-name-service",
       "type": "related"
@@ -184,6 +1327,11 @@
     {
       "source": "ietf-draft-narajala-ans/agent-communication-protocols",
       "target": "ietf-draft-narajala-ans/agent-identity-and-trust",
+      "type": "related"
+    },
+    {
+      "source": "ietf-draft-narajala-ans/agent-communication-protocols",
+      "target": "arxiv-2510-11977/agent-scaffolds",
       "type": "related"
     },
     {
@@ -204,6 +1352,16 @@
     {
       "source": "ietf-draft-narajala-ans/agent-discovery",
       "target": "ietf-draft-narajala-ans/agent-identity-and-trust",
+      "type": "related"
+    },
+    {
+      "source": "ietf-draft-narajala-ans/agent-discovery",
+      "target": "agent-first-data-systems/agentic-speculation",
+      "type": "related"
+    },
+    {
+      "source": "ietf-draft-narajala-ans/agent-discovery",
+      "target": "arxiv-2510-11977/holistic-agent-leaderboard",
       "type": "related"
     },
     {
@@ -264,6 +1422,11 @@
     {
       "source": "ietf-draft-narajala-ans/maestro-threat-framework",
       "target": "ietf-draft-narajala-ans/agent-identity-and-trust",
+      "type": "related"
+    },
+    {
+      "source": "ietf-draft-narajala-ans/maestro-threat-framework",
+      "target": "arxiv-2510-11977/agent-shortcuts-and-gaming",
       "type": "related"
     },
     {
@@ -370,6 +1533,267 @@
       "source": "naur-programming-as-theory-building/tacit-knowledge-in-software",
       "target": "naur-programming-as-theory-building/summary-naur-programming-as-theory-building",
       "type": "source"
+    },
+    {
+      "source": "arxiv-2509-07367/evolutionary-coding-agents",
+      "target": "arxiv-2510-11977/agent-evaluation-benchmarks",
+      "type": "shared-tag",
+      "shared_tags": [
+        "ai-agents",
+        "multi-agent-systems"
+      ]
+    },
+    {
+      "source": "arxiv-2509-07367/evolutionary-coding-agents",
+      "target": "arxiv-2510-11977/agent-scaffolds",
+      "type": "shared-tag",
+      "shared_tags": [
+        "ai-agents",
+        "multi-agent-systems"
+      ]
+    },
+    {
+      "source": "arxiv-2509-07367/evolutionary-coding-agents",
+      "target": "arxiv-2510-11977/agent-shortcuts-and-gaming",
+      "type": "shared-tag",
+      "shared_tags": [
+        "ai-agents",
+        "multi-agent-systems"
+      ]
+    },
+    {
+      "source": "arxiv-2509-07367/evolutionary-coding-agents",
+      "target": "arxiv-2510-11977/holistic-agent-leaderboard",
+      "type": "shared-tag",
+      "shared_tags": [
+        "ai-agents",
+        "multi-agent-systems"
+      ]
+    },
+    {
+      "source": "arxiv-2509-07367/evolutionary-coding-agents",
+      "target": "ietf-draft-narajala-ans/agent-communication-protocols",
+      "type": "shared-tag",
+      "shared_tags": [
+        "ai-agents",
+        "multi-agent-systems"
+      ]
+    },
+    {
+      "source": "arxiv-2509-07367/evolutionary-coding-agents",
+      "target": "ietf-draft-narajala-ans/agent-discovery",
+      "type": "shared-tag",
+      "shared_tags": [
+        "ai-agents",
+        "multi-agent-systems"
+      ]
+    },
+    {
+      "source": "arxiv-2509-07367/evolutionary-coding-agents",
+      "target": "ietf-draft-narajala-ans/agent-identity-and-trust",
+      "type": "shared-tag",
+      "shared_tags": [
+        "ai-agents",
+        "multi-agent-systems"
+      ]
+    },
+    {
+      "source": "arxiv-2509-07367/evolutionary-coding-agents",
+      "target": "ietf-draft-narajala-ans/agent-name-service",
+      "type": "shared-tag",
+      "shared_tags": [
+        "ai-agents",
+        "multi-agent-systems"
+      ]
+    },
+    {
+      "source": "arxiv-2509-07367/evolutionary-coding-agents",
+      "target": "ietf-draft-narajala-ans/maestro-threat-framework",
+      "type": "shared-tag",
+      "shared_tags": [
+        "ai-agents",
+        "multi-agent-systems"
+      ]
+    },
+    {
+      "source": "arxiv-2510-11977/agent-evaluation-benchmarks",
+      "target": "ietf-draft-narajala-ans/agent-communication-protocols",
+      "type": "shared-tag",
+      "shared_tags": [
+        "ai-agents",
+        "multi-agent-systems"
+      ]
+    },
+    {
+      "source": "arxiv-2510-11977/agent-evaluation-benchmarks",
+      "target": "ietf-draft-narajala-ans/agent-discovery",
+      "type": "shared-tag",
+      "shared_tags": [
+        "ai-agents",
+        "multi-agent-systems"
+      ]
+    },
+    {
+      "source": "arxiv-2510-11977/agent-evaluation-benchmarks",
+      "target": "ietf-draft-narajala-ans/agent-identity-and-trust",
+      "type": "shared-tag",
+      "shared_tags": [
+        "ai-agents",
+        "multi-agent-systems"
+      ]
+    },
+    {
+      "source": "arxiv-2510-11977/agent-evaluation-benchmarks",
+      "target": "ietf-draft-narajala-ans/agent-name-service",
+      "type": "shared-tag",
+      "shared_tags": [
+        "ai-agents",
+        "multi-agent-systems"
+      ]
+    },
+    {
+      "source": "arxiv-2510-11977/agent-evaluation-benchmarks",
+      "target": "ietf-draft-narajala-ans/maestro-threat-framework",
+      "type": "shared-tag",
+      "shared_tags": [
+        "ai-agents",
+        "multi-agent-systems"
+      ]
+    },
+    {
+      "source": "arxiv-2510-11977/agent-scaffolds",
+      "target": "ietf-draft-narajala-ans/agent-communication-protocols",
+      "type": "shared-tag",
+      "shared_tags": [
+        "ai-agents",
+        "multi-agent-systems"
+      ]
+    },
+    {
+      "source": "arxiv-2510-11977/agent-scaffolds",
+      "target": "ietf-draft-narajala-ans/agent-discovery",
+      "type": "shared-tag",
+      "shared_tags": [
+        "ai-agents",
+        "multi-agent-systems"
+      ]
+    },
+    {
+      "source": "arxiv-2510-11977/agent-scaffolds",
+      "target": "ietf-draft-narajala-ans/agent-identity-and-trust",
+      "type": "shared-tag",
+      "shared_tags": [
+        "ai-agents",
+        "multi-agent-systems"
+      ]
+    },
+    {
+      "source": "arxiv-2510-11977/agent-scaffolds",
+      "target": "ietf-draft-narajala-ans/agent-name-service",
+      "type": "shared-tag",
+      "shared_tags": [
+        "ai-agents",
+        "multi-agent-systems"
+      ]
+    },
+    {
+      "source": "arxiv-2510-11977/agent-scaffolds",
+      "target": "ietf-draft-narajala-ans/maestro-threat-framework",
+      "type": "shared-tag",
+      "shared_tags": [
+        "ai-agents",
+        "multi-agent-systems"
+      ]
+    },
+    {
+      "source": "arxiv-2510-11977/agent-shortcuts-and-gaming",
+      "target": "ietf-draft-narajala-ans/agent-communication-protocols",
+      "type": "shared-tag",
+      "shared_tags": [
+        "ai-agents",
+        "multi-agent-systems"
+      ]
+    },
+    {
+      "source": "arxiv-2510-11977/agent-shortcuts-and-gaming",
+      "target": "ietf-draft-narajala-ans/agent-discovery",
+      "type": "shared-tag",
+      "shared_tags": [
+        "ai-agents",
+        "multi-agent-systems"
+      ]
+    },
+    {
+      "source": "arxiv-2510-11977/agent-shortcuts-and-gaming",
+      "target": "ietf-draft-narajala-ans/agent-identity-and-trust",
+      "type": "shared-tag",
+      "shared_tags": [
+        "ai-agents",
+        "multi-agent-systems"
+      ]
+    },
+    {
+      "source": "arxiv-2510-11977/agent-shortcuts-and-gaming",
+      "target": "ietf-draft-narajala-ans/agent-name-service",
+      "type": "shared-tag",
+      "shared_tags": [
+        "ai-agents",
+        "multi-agent-systems"
+      ]
+    },
+    {
+      "source": "arxiv-2510-11977/agent-shortcuts-and-gaming",
+      "target": "ietf-draft-narajala-ans/maestro-threat-framework",
+      "type": "shared-tag",
+      "shared_tags": [
+        "ai-agents",
+        "multi-agent-systems"
+      ]
+    },
+    {
+      "source": "arxiv-2510-11977/holistic-agent-leaderboard",
+      "target": "ietf-draft-narajala-ans/agent-communication-protocols",
+      "type": "shared-tag",
+      "shared_tags": [
+        "ai-agents",
+        "multi-agent-systems"
+      ]
+    },
+    {
+      "source": "arxiv-2510-11977/holistic-agent-leaderboard",
+      "target": "ietf-draft-narajala-ans/agent-discovery",
+      "type": "shared-tag",
+      "shared_tags": [
+        "ai-agents",
+        "multi-agent-systems"
+      ]
+    },
+    {
+      "source": "arxiv-2510-11977/holistic-agent-leaderboard",
+      "target": "ietf-draft-narajala-ans/agent-identity-and-trust",
+      "type": "shared-tag",
+      "shared_tags": [
+        "ai-agents",
+        "multi-agent-systems"
+      ]
+    },
+    {
+      "source": "arxiv-2510-11977/holistic-agent-leaderboard",
+      "target": "ietf-draft-narajala-ans/agent-name-service",
+      "type": "shared-tag",
+      "shared_tags": [
+        "ai-agents",
+        "multi-agent-systems"
+      ]
+    },
+    {
+      "source": "arxiv-2510-11977/holistic-agent-leaderboard",
+      "target": "ietf-draft-narajala-ans/maestro-threat-framework",
+      "type": "shared-tag",
+      "shared_tags": [
+        "ai-agents",
+        "multi-agent-systems"
+      ]
     }
   ]
 }

@@ -8,22 +8,11 @@ argument-hint: <url> [slug]
 
 Add the URL $ARGUMENTS to the knowledge base. This runs three phases.
 
-## Phase 0: Check depth level preference
+## Phase 0: Read depth level preference
 
 1. Read the config file at `.claude/skills/add/config.json`
-2. If the file exists and has a `depth_level` field, use that as the default
-3. Ask the user:
-
-   "What depth level for the source summary?
-   - **100** - Explain like I'm 12 (Feynman technique, analogies, no jargon)
-   - **300** - College level (technical but accessible, assumes some background)
-   - **500** - Expert deep-dive (full technical detail, assumes domain expertise)
-
-   Current default: <value from config or 100>
-   Press enter to use default, or type 100/300/500 to change."
-
-4. If the user picks a new level, update `.claude/skills/add/config.json` with the new preference
-5. If the user just presses enter or says "default", use the stored value
+2. Use the `depth_level` value from the config (default: 100 if not set)
+3. Do NOT ask the user for the depth level - just use whatever is in the config
 
 ## Phase 1: Clip (download URL to raw/)
 
@@ -33,17 +22,19 @@ Run the clip script:
 ./clip.sh $ARGUMENTS
 ```
 
-The script auto-detects content type:
-- YouTube and PDF URLs use markitdown
-- Everything else uses trafilatura
+The script tries markitdown first, then falls back to trafilatura.
 
-If clip.sh fails or returns empty content, try the alternate tool directly:
-- For web articles: `uv run trafilatura -u "<url>" --output-format markdown`
-- For PDFs/YouTube: `uv run markitdown "<url>"`
+If clip.sh fails or returns empty content, try the tools directly:
+- `uv run markitdown "<url>"`
+- `uv run trafilatura -u "<url>" --output-format markdown`
 
-If both tools fail (e.g. scanned image PDFs), tell the user and stop.
+If both tools fail, check if markitdown downloaded the original file (e.g. a PDF) to a temporary folder like /tmp/. If so, convert it to markdown directly using markitdown on the local file path and copy the output to raw/ without asking for permission.
+
+If all approaches fail (e.g. scanned image PDFs), tell the user and stop.
 
 Verify the file was created and has content. Read the first 50 lines to confirm.
+
+**Important**: Do NOT ask the user for permission during the add process. This includes reading files, copying content from temporary folders, creating directories (mkdir), writing files, or any other file operations. Just do it all without prompting.
 
 ## Phase 2: Ingest (compile raw file into wiki)
 

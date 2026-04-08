@@ -3,7 +3,7 @@ title: MAESTRO Threat Framework
 created: 2026-04-07
 updated: 2026-04-07
 sources: [raw/20260407-ietf-draft-narajala-ans.md]
-related: [agent-name-service](agent-name-service.md), [agent-identity-and-trust](agent-identity-and-trust.md)
+related: [agent-name-service](agent-name-service.md), [agent-identity-and-trust](agent-identity-and-trust.md), [Agent Shortcuts and Gaming](../arxiv-2510-11977/agent-shortcuts-and-gaming.md)
 tags: [maestro, owasp, threat-modeling, agent-security, impersonation, ai-agents, multi-agent-systems]
 ---
 

@@ -214,12 +214,69 @@ def _build_edges(
     return edges
 
 
+MIN_SHARED_TAGS = 2
+
+
+def _build_tag_edges(
+    nodes: list,
+    existing_edge_keys: set,
+) -> list:
+    """Build edges between articles in different folders that share tags.
+
+    Two articles get a shared-tag edge if they are in different source
+    folders and share at least MIN_SHARED_TAGS tags. This bridges the
+    otherwise isolated per-source clusters.
+    """
+    articles = [
+        n for n in nodes
+        if n["type"] == "article" and n.get("tags")
+    ]
+
+    edges = []
+    seen = set()
+
+    for i, a in enumerate(articles):
+        for b in articles[i + 1:]:
+            if a["source_folder"] == b["source_folder"]:
+                continue
+
+            shared = set(a["tags"]) & set(b["tags"])
+            if len(shared) < MIN_SHARED_TAGS:
+                continue
+
+            pair = tuple(sorted([a["id"], b["id"]]))
+            if pair in seen:
+                continue
+            seen.add(pair)
+
+            edge_key = (a["id"], b["id"], "shared-tag")
+            if edge_key in existing_edge_keys:
+                continue
+
+            edges.append({
+                "source": a["id"],
+                "target": b["id"],
+                "type": "shared-tag",
+                "shared_tags": sorted(shared),
+            })
+
+    logger.info(f"Built {len(edges)} shared-tag edges across folders")
+    return edges
+
+
 def build_graph() -> dict:
     """Build the complete knowledge graph from wiki articles."""
     files = _scan_wiki_folders()
     nodes = _build_nodes(files)
     node_ids = {node["id"] for node in nodes}
     edges = _build_edges(files, node_ids)
+
+    existing_keys = {
+        (e["source"], e["target"], e["type"])
+        for e in edges
+    }
+    tag_edges = _build_tag_edges(nodes, existing_keys)
+    edges.extend(tag_edges)
 
     return {"nodes": nodes, "edges": edges}
 
@@ -257,32 +314,32 @@ def _generate_html(
   }}
 
   #controls h2 {{
-    font-size: 14px;
+    font-size: 18px;
     margin-bottom: 12px;
     color: #f0f6fc;
   }}
 
   #controls label {{
     display: block;
-    font-size: 12px;
+    font-size: 15px;
     margin-bottom: 4px;
     color: #8b949e;
   }}
 
   #controls select, #controls input {{
     width: 100%;
-    padding: 6px 8px;
-    margin-bottom: 10px;
+    padding: 8px 10px;
+    margin-bottom: 12px;
     background: #0d1117;
     border: 1px solid #30363d;
     border-radius: 4px;
     color: #c9d1d9;
-    font-size: 12px;
+    font-size: 15px;
   }}
 
   .legend {{
     margin-top: 12px;
-    font-size: 11px;
+    font-size: 14px;
   }}
 
   .legend-item {{
@@ -363,12 +420,14 @@ def _generate_html(
   <select id="edge-type">
     <option value="all">All edges</option>
     <option value="related">Related only</option>
+    <option value="shared-tag">Shared tag only</option>
     <option value="source">Source only</option>
   </select>
 
   <div class="legend">
     <div class="legend-item"><div class="legend-dot" style="background:#f78166"></div> Article</div>
     <div class="legend-item"><div class="legend-dot" style="background:#3fb950"></div> Summary</div>
+    <div class="legend-item"><div class="legend-dot" style="background:#d2a8ff"></div> Shared tag link</div>
     <div class="legend-item"><div class="legend-dot" style="background:#30363d; border:1px dashed #484f58"></div> Filtered out</div>
   </div>
 </div>
@@ -432,9 +491,21 @@ def _generate_html(
     .selectAll("line")
     .data(data.edges)
     .join("line")
-    .attr("stroke", d => d.type === "source" ? "#238636" : "#30363d")
-    .attr("stroke-width", d => d.type === "source" ? 1.5 : 1)
-    .attr("stroke-dasharray", d => d.type === "source" ? "4,3" : null);
+    .attr("stroke", d => {{
+      if (d.type === "source") return "#238636";
+      if (d.type === "shared-tag") return "#d2a8ff";
+      return "#30363d";
+    }})
+    .attr("stroke-width", d => {{
+      if (d.type === "source") return 1.5;
+      if (d.type === "shared-tag") return 1.2;
+      return 1;
+    }})
+    .attr("stroke-dasharray", d => {{
+      if (d.type === "source") return "4,3";
+      if (d.type === "shared-tag") return "6,4";
+      return null;
+    }});
 
   const node = g.append("g")
     .selectAll("circle")
@@ -455,7 +526,7 @@ def _generate_html(
     .data(data.nodes)
     .join("text")
     .text(d => d.title.length > 30 ? d.title.slice(0, 28) + "..." : d.title)
-    .attr("font-size", 10)
+    .attr("font-size", 16)
     .attr("fill", "#8b949e")
     .attr("dx", 14)
     .attr("dy", 4);
@@ -598,11 +669,13 @@ def main():
     summary_count = sum(1 for n in graph["nodes"] if n["type"] == "summary")
     related_count = sum(1 for e in graph["edges"] if e["type"] == "related")
     source_count = sum(1 for e in graph["edges"] if e["type"] == "source")
+    tag_edge_count = sum(1 for e in graph["edges"] if e["type"] == "shared-tag")
 
     logger.info(
         f"Wrote {OUTPUT_JSON} and {OUTPUT_HTML}: "
         f"{article_count} articles, {summary_count} summaries, "
-        f"{related_count} related edges, {source_count} source edges"
+        f"{related_count} related edges, {source_count} source edges, "
+        f"{tag_edge_count} shared-tag edges"
     )
 
 

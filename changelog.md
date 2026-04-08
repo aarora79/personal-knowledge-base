@@ -1,5 +1,33 @@
 # Changelog
 
+## [2026-04-08] ingest | The Nature of the Firm (R. H. Coase, 1937)
+- Processed: raw/20260408-coase-nature-of-the-firm.md
+- Folder: wiki/coase-nature-of-the-firm/
+- Created: transaction-costs.md, theory-of-the-firm.md, price-mechanism-vs-entrepreneurial-coordination.md, firm-size-determinants.md, vertical-integration-and-combination.md, knights-uncertainty-theory.md
+- Summary: wiki/coase-nature-of-the-firm/summary-coase-nature-of-the-firm.md (depth: 500)
+- Updated: wiki/index.md (added Economics of Organization category with 6 articles, total articles: 39)
+
+## [2026-04-08] ingest | SATLUTION: Autonomous Code Evolution Meets NP-Completeness
+- Processed: raw/20260408-arxiv-2509-07367.md
+- Folder: wiki/arxiv-2509-07367/
+- Created: satlution-framework.md, llm-code-evolution.md, boolean-satisfiability.md, self-evolving-rule-systems.md, repository-scale-code-evolution.md, verification-pipelines-for-code-evolution.md, evolutionary-coding-agents.md, multi-armed-bandit-heuristic-tuning.md
+- Summary: wiki/arxiv-2509-07367/summary-arxiv-2509-07367.md (depth: 500)
+- Updated: wiki/index.md (added 8 articles under LLM-Based Code Evolution + Combinatorial Optimization, total articles: 33)
+
+## [2026-04-08] ingest | Holistic Agent Leaderboard (HAL) - Princeton
+- Processed: raw/20260408-arxiv-2510-11977.md
+- Folder: wiki/arxiv-2510-11977/
+- Created: holistic-agent-leaderboard.md, agent-evaluation-benchmarks.md, agent-scaffolds.md, pareto-frontier-in-agent-evaluation.md, reasoning-effort-tradeoffs.md, automated-agent-log-analysis.md, agent-shortcuts-and-gaming.md, agent-evaluation-infrastructure.md
+- Summary: wiki/arxiv-2510-11977/summary-arxiv-2510-11977.md (depth: 500)
+- Updated: wiki/index.md (added 8 articles under Benchmarking and Evaluation + AI Agents, total articles: 25)
+
+## [2026-04-08] ingest | Agent-First Data Systems (UC Berkeley)
+- Processed: raw/20250901-agent-first-data-systems.md
+- Folder: wiki/agent-first-data-systems/
+- Created: agentic-speculation.md, agent-first-data-systems-architecture.md, probes-and-briefs.md, probe-optimization.md, agentic-memory-store.md, branched-updates.md, sleeper-agents.md
+- Summary: wiki/agent-first-data-systems/summary-agent-first-data-systems.md (depth: 500)
+- Updated: wiki/ietf-draft-narajala-ans/agent-discovery.md (added backlink to agentic-speculation)
+
 ## [2026-04-07] bootstrap | Initial knowledge base setup
 - Created folder structure: raw/, wiki/
 - Created CLAUDE.md schema file with GenAI topic focus

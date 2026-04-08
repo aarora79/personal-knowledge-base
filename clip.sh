@@ -3,13 +3,11 @@
 #
 # Usage:
 #   ./clip.sh <url> [slug]
-#   ./clip.sh --pdf <url> [slug]       # Use markitdown for PDFs
-#   ./clip.sh --youtube <url> [slug]   # Use markitdown for YouTube
 #   ./clip.sh --bulk urls.txt          # Bulk clip from file
 #
-# Tools:
-#   - trafilatura: Best for web articles/blog posts (default)
-#   - markitdown:  Best for PDFs, DOCX, YouTube transcripts
+# Tools (tried in order):
+#   1. markitdown:  Tried first (handles PDFs, DOCX, YouTube, web)
+#   2. trafilatura: Fallback for web articles/blog posts
 #
 # Install:
 #   uv sync
@@ -74,7 +72,7 @@ _bulk_clip() {
         [[ -z "$url" || "$url" == \#* ]] && continue
 
         slug=$(_generate_slug "$url")
-        _clip_with_trafilatura "$url" "$slug" || true
+        _clip_with_markitdown "$url" "$slug" || _clip_with_trafilatura "$url" "$slug" || true
         sleep 1  # be polite to servers
     done < "$file"
 
@@ -83,7 +81,6 @@ _bulk_clip() {
 
 
 clip() {
-    local mode="trafilatura"
     local url=""
     local slug=""
 
@@ -91,7 +88,7 @@ clip() {
     while [[ $# -gt 0 ]]; do
         case "$1" in
             --pdf|--youtube|--markitdown)
-                mode="markitdown"
+                # Kept for backwards compatibility, but markitdown is now always tried first
                 shift
                 ;;
             --bulk)
@@ -122,16 +119,13 @@ clip() {
         slug=$(_generate_slug "$url")
     fi
 
-    # Auto-detect: use markitdown for PDFs and YouTube
-    if [[ "$url" == *.pdf ]] || [[ "$url" == *youtube.com* ]] || [[ "$url" == *youtu.be* ]]; then
-        mode="markitdown"
+    # Try markitdown first, fall back to trafilatura
+    if _clip_with_markitdown "$url" "$slug"; then
+        return 0
     fi
 
-    if [ "$mode" = "markitdown" ]; then
-        _clip_with_markitdown "$url" "$slug"
-    else
-        _clip_with_trafilatura "$url" "$slug"
-    fi
+    echo "markitdown failed, trying trafilatura..."
+    _clip_with_trafilatura "$url" "$slug"
 }
 
 # Run
