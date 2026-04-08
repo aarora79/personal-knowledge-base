@@ -1,6 +1,6 @@
 # Knowledge Base Index
 Last updated: 2026-04-08
-Total articles: 39
+Total articles: 44
 
 ## Categories
 
@@ -66,7 +66,13 @@ Total articles: 39
 - [Knight's Uncertainty Theory of the Firm](coase-nature-of-the-firm/knights-uncertainty-theory.md) - Frank Knight's competing theory and Coase's critique
 
 ### GenAI Applications
-<!-- Real-world apps, demos, tools built with LLMs -->
+- [Claude Code Skills and Plugins](frontend-slides/claude-code-skills-and-plugins.md) - Modular, installable extensions that add specialized capabilities to Claude Code CLI
+- [Zero-Dependency Web Presentations](frontend-slides/zero-dependency-web-presentations.md) - Self-contained HTML files with inline CSS/JS, no frameworks needed
+- [Anti-AI-Slop Design](frontend-slides/anti-ai-slop-design.md) - Curated design presets that avoid generic AI-generated aesthetics
+
+### AI Tool Design
+- [Progressive Disclosure in AI Tools](frontend-slides/progressive-disclosure-in-ai-tools.md) - Loading AI tool instructions on-demand to conserve context window
+- [Vibe Coding](frontend-slides/vibe-coding.md) - Philosophy of building software by describing intent, not writing code
 
 ### Cloud AI Services
 <!-- Amazon Bedrock, model hosting, inference APIs -->
@@ -88,3 +94,4 @@ Total articles: 39
 - [HAL: Holistic Agent Leaderboard](arxiv-2510-11977/summary-arxiv-2510-11977.md)
 - [SATLUTION: Autonomous Code Evolution Meets NP-Completeness](arxiv-2509-07367/summary-arxiv-2509-07367.md)
 - [Coase: The Nature of the Firm (1937)](coase-nature-of-the-firm/summary-coase-nature-of-the-firm.md)
+- [Frontend Slides: Claude Code Skill for Web Presentations](frontend-slides/summary-frontend-slides.md)

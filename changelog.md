@@ -1,5 +1,12 @@
 # Changelog
 
+## [2026-04-08] ingest | Frontend Slides - Claude Code Skill for Web Presentations
+- Processed: raw/20260408-githubcom-zarazhangrui-frontend-slides-tree-main.md
+- Folder: wiki/frontend-slides/
+- Created: claude-code-skills-and-plugins.md, progressive-disclosure-in-ai-tools.md, vibe-coding.md, zero-dependency-web-presentations.md, anti-ai-slop-design.md
+- Summary: wiki/frontend-slides/summary-frontend-slides.md (depth: 100)
+- Updated: wiki/naur-programming-as-theory-building/programming-as-theory-building.md (added backlink to vibe-coding), wiki/arxiv-2510-11977/agent-scaffolds.md (added backlink to progressive-disclosure)
+
 ## [2026-04-08] ingest | The Nature of the Firm (R. H. Coase, 1937)
 - Processed: raw/20260408-coase-nature-of-the-firm.md
 - Folder: wiki/coase-nature-of-the-firm/

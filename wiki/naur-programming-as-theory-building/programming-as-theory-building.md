@@ -3,7 +3,7 @@ title: Programming as Theory Building
 created: 2026-04-07
 updated: 2026-04-07
 sources: [raw/20260407-pablorauzyname-dev-naur1985programmingpdf.md]
-related: [tacit-knowledge-in-software](tacit-knowledge-in-software.md), [program-lifecycle](program-lifecycle.md), [software-modification-challenges](software-modification-challenges.md), [metaphor-driven-design](metaphor-driven-design.md)
+related: [tacit-knowledge-in-software](tacit-knowledge-in-software.md), [program-lifecycle](program-lifecycle.md), [software-modification-challenges](software-modification-challenges.md), [metaphor-driven-design](metaphor-driven-design.md), [vibe-coding](../frontend-slides/vibe-coding.md)
 tags: [theory-building, peter-naur, gilbert-ryle, tacit-knowledge, software-engineering-philosophy, programming-methodology]
 ---
 
@@ -40,6 +40,7 @@ Naur's view has profound implications for software engineering practice, challen
 - [Program Lifecycle](program-lifecycle.md) - Naur's concepts of program life, death, and revival
 - [Software Modification Challenges](software-modification-challenges.md) - Why program modifications are inherently difficult
 - [Metaphor-Driven Design](metaphor-driven-design.md) - Using shared metaphors to communicate design theories
+- [Vibe Coding](../frontend-slides/vibe-coding.md) - A contrasting philosophy where AI holds the implementation theory and humans hold the intent theory
 
 ## Sources
 - raw/20260407-pablorauzyname-dev-naur1985programmingpdf.md - Peter Naur's 1985 essay, the primary and defining source for this concept

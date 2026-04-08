@@ -3,7 +3,7 @@ title: Agent Scaffolds
 created: 2026-04-08
 updated: 2026-04-08
 sources: [raw/20260408-arxiv-2510-11977.md]
-related: [Holistic Agent Leaderboard](holistic-agent-leaderboard.md), [Agent Evaluation Benchmarks](agent-evaluation-benchmarks.md), [Pareto Frontier in Agent Evaluation](pareto-frontier-in-agent-evaluation.md), [Agent Communication Protocols](../ietf-draft-narajala-ans/agent-communication-protocols.md)
+related: [Holistic Agent Leaderboard](holistic-agent-leaderboard.md), [Agent Evaluation Benchmarks](agent-evaluation-benchmarks.md), [Pareto Frontier in Agent Evaluation](pareto-frontier-in-agent-evaluation.md), [Agent Communication Protocols](../ietf-draft-narajala-ans/agent-communication-protocols.md), [Progressive Disclosure in AI Tools](../frontend-slides/progressive-disclosure-in-ai-tools.md)
 tags: [agent-scaffolds, task-specific, generalist, smolagents, swe-agent, ai-agents, agent-architecture, multi-agent-systems]
 ---
 
