@@ -111,6 +111,104 @@
       "type": "summary"
     },
     {
+      "id": "arxiv-2504-19874/kv-cache-quantization",
+      "title": "KV Cache Quantization",
+      "file": "wiki/arxiv-2504-19874/kv-cache-quantization.md",
+      "tags": [
+        "kv-cache",
+        "quantization",
+        "llm-inference",
+        "transformer",
+        "memory-optimization",
+        "long-context"
+      ],
+      "source_folder": "arxiv-2504-19874",
+      "type": "article"
+    },
+    {
+      "id": "arxiv-2504-19874/product-quantization-for-nearest-neighbor-search",
+      "title": "Product Quantization for Nearest Neighbor Search",
+      "file": "wiki/arxiv-2504-19874/product-quantization-for-nearest-neighbor-search.md",
+      "tags": [
+        "product-quantization",
+        "nearest-neighbor-search",
+        "vector-database",
+        "retrieval",
+        "indexing",
+        "rag"
+      ],
+      "source_folder": "arxiv-2504-19874",
+      "type": "article"
+    },
+    {
+      "id": "arxiv-2504-19874/quantized-johnson-lindenstrauss-transform",
+      "title": "Quantized Johnson-Lindenstrauss Transform",
+      "file": "wiki/arxiv-2504-19874/quantized-johnson-lindenstrauss-transform.md",
+      "tags": [
+        "qjl",
+        "johnson-lindenstrauss",
+        "inner-product",
+        "unbiased-estimation",
+        "1-bit-quantization",
+        "sketching"
+      ],
+      "source_folder": "arxiv-2504-19874",
+      "type": "article"
+    },
+    {
+      "id": "arxiv-2504-19874/random-rotation-quantization",
+      "title": "Random Rotation Quantization",
+      "file": "wiki/arxiv-2504-19874/random-rotation-quantization.md",
+      "tags": [
+        "random-rotation",
+        "scalar-quantization",
+        "beta-distribution",
+        "coordinate-independence",
+        "vector-quantization",
+        "dimensionality-reduction"
+      ],
+      "source_folder": "arxiv-2504-19874",
+      "type": "article"
+    },
+    {
+      "id": "arxiv-2504-19874/summary-arxiv-2504-19874",
+      "title": "Source Summary: TurboQuant - Online Vector Quantization with Near-Optimal Distortion Rate",
+      "file": "wiki/arxiv-2504-19874/summary-arxiv-2504-19874.md",
+      "tags": [],
+      "source_folder": "arxiv-2504-19874",
+      "type": "summary"
+    },
+    {
+      "id": "arxiv-2504-19874/turboquant",
+      "title": "TurboQuant",
+      "file": "wiki/arxiv-2504-19874/turboquant.md",
+      "tags": [
+        "vector-quantization",
+        "turboquant",
+        "kv-cache",
+        "llm-inference",
+        "near-optimal-distortion",
+        "online-quantization"
+      ],
+      "source_folder": "arxiv-2504-19874",
+      "type": "article"
+    },
+    {
+      "id": "arxiv-2504-19874/vector-quantization-theory",
+      "title": "Vector Quantization Theory",
+      "file": "wiki/arxiv-2504-19874/vector-quantization-theory.md",
+      "tags": [
+        "vector-quantization",
+        "information-theory",
+        "shannon",
+        "distortion-rate",
+        "source-coding",
+        "lossy-compression"
+      ],
+      "source_folder": "arxiv-2504-19874",
+      "type": "article"
+    },
+    {
       "id": "arxiv-2509-07367/boolean-satisfiability",
       "title": "Boolean Satisfiability (SAT)",
       "file": "wiki/arxiv-2509-07367/boolean-satisfiability.md",
@@ -983,6 +1081,136 @@
     {
       "source": "agent-first-data-systems/sleeper-agents",
       "target": "agent-first-data-systems/summary-agent-first-data-systems",
+      "type": "source"
+    },
+    {
+      "source": "arxiv-2504-19874/kv-cache-quantization",
+      "target": "arxiv-2504-19874/turboquant",
+      "type": "related"
+    },
+    {
+      "source": "arxiv-2504-19874/kv-cache-quantization",
+      "target": "arxiv-2504-19874/vector-quantization-theory",
+      "type": "related"
+    },
+    {
+      "source": "arxiv-2504-19874/kv-cache-quantization",
+      "target": "arxiv-2504-19874/random-rotation-quantization",
+      "type": "related"
+    },
+    {
+      "source": "arxiv-2504-19874/kv-cache-quantization",
+      "target": "arxiv-2504-19874/summary-arxiv-2504-19874",
+      "type": "source"
+    },
+    {
+      "source": "arxiv-2504-19874/product-quantization-for-nearest-neighbor-search",
+      "target": "arxiv-2504-19874/turboquant",
+      "type": "related"
+    },
+    {
+      "source": "arxiv-2504-19874/product-quantization-for-nearest-neighbor-search",
+      "target": "arxiv-2504-19874/vector-quantization-theory",
+      "type": "related"
+    },
+    {
+      "source": "arxiv-2504-19874/product-quantization-for-nearest-neighbor-search",
+      "target": "arxiv-2504-19874/kv-cache-quantization",
+      "type": "related"
+    },
+    {
+      "source": "arxiv-2504-19874/product-quantization-for-nearest-neighbor-search",
+      "target": "arxiv-2504-19874/summary-arxiv-2504-19874",
+      "type": "source"
+    },
+    {
+      "source": "arxiv-2504-19874/quantized-johnson-lindenstrauss-transform",
+      "target": "arxiv-2504-19874/turboquant",
+      "type": "related"
+    },
+    {
+      "source": "arxiv-2504-19874/quantized-johnson-lindenstrauss-transform",
+      "target": "arxiv-2504-19874/random-rotation-quantization",
+      "type": "related"
+    },
+    {
+      "source": "arxiv-2504-19874/quantized-johnson-lindenstrauss-transform",
+      "target": "arxiv-2504-19874/vector-quantization-theory",
+      "type": "related"
+    },
+    {
+      "source": "arxiv-2504-19874/quantized-johnson-lindenstrauss-transform",
+      "target": "arxiv-2504-19874/summary-arxiv-2504-19874",
+      "type": "source"
+    },
+    {
+      "source": "arxiv-2504-19874/random-rotation-quantization",
+      "target": "arxiv-2504-19874/turboquant",
+      "type": "related"
+    },
+    {
+      "source": "arxiv-2504-19874/random-rotation-quantization",
+      "target": "arxiv-2504-19874/vector-quantization-theory",
+      "type": "related"
+    },
+    {
+      "source": "arxiv-2504-19874/random-rotation-quantization",
+      "target": "arxiv-2504-19874/quantized-johnson-lindenstrauss-transform",
+      "type": "related"
+    },
+    {
+      "source": "arxiv-2504-19874/random-rotation-quantization",
+      "target": "arxiv-2504-19874/summary-arxiv-2504-19874",
+      "type": "source"
+    },
+    {
+      "source": "arxiv-2504-19874/turboquant",
+      "target": "arxiv-2504-19874/kv-cache-quantization",
+      "type": "related"
+    },
+    {
+      "source": "arxiv-2504-19874/turboquant",
+      "target": "arxiv-2504-19874/random-rotation-quantization",
+      "type": "related"
+    },
+    {
+      "source": "arxiv-2504-19874/turboquant",
+      "target": "arxiv-2504-19874/quantized-johnson-lindenstrauss-transform",
+      "type": "related"
+    },
+    {
+      "source": "arxiv-2504-19874/turboquant",
+      "target": "arxiv-2504-19874/vector-quantization-theory",
+      "type": "related"
+    },
+    {
+      "source": "arxiv-2504-19874/turboquant",
+      "target": "arxiv-2504-19874/product-quantization-for-nearest-neighbor-search",
+      "type": "related"
+    },
+    {
+      "source": "arxiv-2504-19874/turboquant",
+      "target": "arxiv-2504-19874/summary-arxiv-2504-19874",
+      "type": "source"
+    },
+    {
+      "source": "arxiv-2504-19874/vector-quantization-theory",
+      "target": "arxiv-2504-19874/turboquant",
+      "type": "related"
+    },
+    {
+      "source": "arxiv-2504-19874/vector-quantization-theory",
+      "target": "arxiv-2504-19874/random-rotation-quantization",
+      "type": "related"
+    },
+    {
+      "source": "arxiv-2504-19874/vector-quantization-theory",
+      "target": "arxiv-2504-19874/product-quantization-for-nearest-neighbor-search",
+      "type": "related"
+    },
+    {
+      "source": "arxiv-2504-19874/vector-quantization-theory",
+      "target": "arxiv-2504-19874/summary-arxiv-2504-19874",
       "type": "source"
     },
     {

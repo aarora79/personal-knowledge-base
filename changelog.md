@@ -1,5 +1,12 @@
 # Changelog
 
+## [2026-04-14] ingest | TurboQuant: Online Vector Quantization with Near-Optimal Distortion Rate
+- Processed: raw/20260414-arxivorg-pdf-250419874.md
+- Folder: wiki/arxiv-2504-19874/
+- Created: turboquant.md, kv-cache-quantization.md, vector-quantization-theory.md, random-rotation-quantization.md, quantized-johnson-lindenstrauss-transform.md, product-quantization-for-nearest-neighbor-search.md
+- Summary: wiki/arxiv-2504-19874/summary-arxiv-2504-19874.md (depth: 500)
+- Updated: wiki/index.md (added LLM Fundamentals and Vector Quantization categories, total articles: 55)
+
 ## [2026-04-08] ingest | Claude Code Memory Management (Young Leaders in Tech #98)
 - Processed: raw/20260408-youngleaderstech-p-how-i-finally-sorted-my-claude-code-memor.md
 - Folder: wiki/claude-code-memory-management/

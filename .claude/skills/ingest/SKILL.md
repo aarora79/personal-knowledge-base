@@ -44,6 +44,8 @@ For each unprocessed raw file:
 
 Run `uv run python build_graph.py` to regenerate `wiki/graph.json` from article frontmatter.
 
+Then update the graph screenshot: `uv run python screenshot_graph.py`
+
 ## Step 5: Update index and log
 
 1. Update `wiki/index.md`:

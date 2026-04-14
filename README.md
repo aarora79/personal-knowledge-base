@@ -10,7 +10,7 @@ The knowledge graph connects articles across sources via explicit cross-referenc
 
 ![Knowledge Graph](docs/img/kg.png)
 
-The interactive version is at `wiki/graph.html` -- a self-contained D3.js force-directed graph with filtering by source folder, tag, and edge type. Nodes are color-coded by source, and edges come in three types: related (explicit cross-references), shared-tag (auto-generated between articles in different folders sharing 2+ tags), and source (article to its summary).
+The [interactive version](wiki/graph.html) is a self-contained D3.js force-directed graph with filtering by source folder, tag, and edge type. Nodes are color-coded by source, and edges come in three types: related (explicit cross-references), shared-tag (auto-generated between articles in different folders sharing 2+ tags), and source (article to its summary).
 
 ## Prerequisites
 

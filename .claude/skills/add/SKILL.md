@@ -56,7 +56,8 @@ Read the full raw file that was just created. Then:
    - Add summary link under "Source Summaries" section
    - Update the "Total articles" count and "Last updated" date
 10. Rebuild the context graph: `uv run python build_graph.py`
-11. Append to `changelog.md`:
+11. Update the graph screenshot: `uv run python screenshot_graph.py`
+12. Append to `changelog.md`:
     ```
     ## [YYYY-MM-DD] ingest | <source description>
     - Processed: raw/<filename>

@@ -1,11 +1,18 @@
 # Knowledge Base Index
-Last updated: 2026-04-08
-Total articles: 49
+Last updated: 2026-04-14
+Total articles: 55
 
 ## Categories
 
 ### LLM Fundamentals
-<!-- Articles about transformers, attention, tokenization, inference -->
+- [KV Cache Quantization](arxiv-2504-19874/kv-cache-quantization.md) - Compressing key-value caches in LLM inference for long-context models
+- [TurboQuant](arxiv-2504-19874/turboquant.md) - Online vector quantization algorithm with near-optimal MSE and inner product distortion
+
+### Vector Quantization and Compression
+- [Vector Quantization Theory](arxiv-2504-19874/vector-quantization-theory.md) - Shannon's source coding, distortion-rate functions, and information-theoretic lower bounds
+- [Random Rotation Quantization](arxiv-2504-19874/random-rotation-quantization.md) - Rotating vectors to enable independent per-coordinate scalar quantization
+- [Quantized Johnson-Lindenstrauss Transform](arxiv-2504-19874/quantized-johnson-lindenstrauss-transform.md) - 1-bit sketching for unbiased inner product estimation
+- [Product Quantization for Nearest Neighbor Search](arxiv-2504-19874/product-quantization-for-nearest-neighbor-search.md) - Codebook-based vector compression for vector databases and RAG
 
 ### Prompt Engineering
 <!-- Techniques, frameworks, and best practices for prompting -->
@@ -101,3 +108,4 @@ Total articles: 49
 - [Coase: The Nature of the Firm (1937)](coase-nature-of-the-firm/summary-coase-nature-of-the-firm.md)
 - [Frontend Slides: Claude Code Skill for Web Presentations](frontend-slides/summary-frontend-slides.md)
 - [Claude Code Memory Management](claude-code-memory-management/summary-claude-code-memory-management.md)
+- [TurboQuant: Online Vector Quantization](arxiv-2504-19874/summary-arxiv-2504-19874.md)
