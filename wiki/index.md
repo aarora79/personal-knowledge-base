@@ -1,6 +1,6 @@
 # Knowledge Base Index
-Last updated: 2026-04-14
-Total articles: 55
+Last updated: 2026-04-20
+Total articles: 63
 
 ## Categories
 
@@ -43,7 +43,16 @@ Total articles: 55
 <!-- LoRA, RLHF, GRPO, dataset preparation -->
 
 ### Guardrails and Responsible AI
-<!-- Safety, content filtering, bias mitigation -->
+- [Faustian Bargain of AI](klowden-tao-ai-mathematics/faustian-bargain-of-ai.md) - Implicit tradeoffs humanity made in rapidly adopting AI tools
+- [AI Digital Divide](klowden-tao-ai-mathematics/ai-digital-divide.md) - Two-layer inequity in frontier AI access and model fragmentation
+- [AI Citogenesis](klowden-tao-ai-mathematics/ai-citogenesis.md) - Circular citation loops corrupting AI-augmented research
+- [Blue Team / Red Team AI](klowden-tao-ai-mathematics/blue-team-red-team-ai.md) - Safe AI use for verification vs. unsafe use for generation
+- [Copernican View of AI](klowden-tao-ai-mathematics/copernican-view-of-ai.md) - Long-term philosophical framework for human-AI coexistence
+
+### AI and Mathematics
+- [AI and Mathematical Proof](klowden-tao-ai-mathematics/ai-and-mathematical-proof.md) - How AI disrupts mathematics' traditional standards of proof
+- [Mathematical Smell Test](klowden-tao-ai-mathematics/mathematical-smell-test.md) - Heuristic proof assessment before formal verification
+- [Autoformalization](klowden-tao-ai-mathematics/autoformalization.md) - Converting informal proofs to computer-verifiable languages (Lean, Rocq)
 
 ### Benchmarking and Evaluation
 - [Holistic Agent Leaderboard (HAL)](arxiv-2510-11977/holistic-agent-leaderboard.md) - Unified evaluation framework for reproducible, cost-controlled agent benchmarking
@@ -109,3 +118,4 @@ Total articles: 55
 - [Frontend Slides: Claude Code Skill for Web Presentations](frontend-slides/summary-frontend-slides.md)
 - [Claude Code Memory Management](claude-code-memory-management/summary-claude-code-memory-management.md)
 - [TurboQuant: Online Vector Quantization](arxiv-2504-19874/summary-arxiv-2504-19874.md)
+- [Klowden & Tao: Mathematical Methods and Human Thought in the Age of AI](klowden-tao-ai-mathematics/summary-klowden-tao-ai-mathematics.md)

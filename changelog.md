@@ -1,5 +1,12 @@
 # Changelog
 
+## [2026-04-20] ingest | Klowden & Tao: Mathematical Methods and Human Thought in the Age of AI
+- Processed: raw/20260420-arxivorg-html-260326524v1.md
+- Folder: wiki/klowden-tao-ai-mathematics/
+- Created: ai-and-mathematical-proof.md, mathematical-smell-test.md, autoformalization.md, blue-team-red-team-ai.md, faustian-bargain-of-ai.md, ai-digital-divide.md, ai-citogenesis.md, copernican-view-of-ai.md
+- Summary: wiki/klowden-tao-ai-mathematics/summary-klowden-tao-ai-mathematics.md (depth: 500)
+- Updated: wiki/index.md (added Guardrails and Responsible AI + AI and Mathematics categories, total articles: 63)
+
 ## [2026-04-14] ingest | TurboQuant: Online Vector Quantization with Near-Optimal Distortion Rate
 - Processed: raw/20260414-arxivorg-pdf-250419874.md
 - Folder: wiki/arxiv-2504-19874/

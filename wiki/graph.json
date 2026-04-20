@@ -816,6 +816,131 @@
       "type": "summary"
     },
     {
+      "id": "klowden-tao-ai-mathematics/ai-and-mathematical-proof",
+      "title": "AI and Mathematical Proof",
+      "file": "wiki/klowden-tao-ai-mathematics/ai-and-mathematical-proof.md",
+      "tags": [
+        "ai-mathematics",
+        "formal-proof",
+        "lean",
+        "mathlib",
+        "formalization",
+        "mathematical-reasoning"
+      ],
+      "source_folder": "klowden-tao-ai-mathematics",
+      "type": "article"
+    },
+    {
+      "id": "klowden-tao-ai-mathematics/ai-citogenesis",
+      "title": "AI Citogenesis",
+      "file": "wiki/klowden-tao-ai-mathematics/ai-citogenesis.md",
+      "tags": [
+        "ai-citogenesis",
+        "information-collapse",
+        "ai-research",
+        "citation-loops",
+        "provenance",
+        "responsible-ai"
+      ],
+      "source_folder": "klowden-tao-ai-mathematics",
+      "type": "article"
+    },
+    {
+      "id": "klowden-tao-ai-mathematics/ai-digital-divide",
+      "title": "AI Digital Divide",
+      "file": "wiki/klowden-tao-ai-mathematics/ai-digital-divide.md",
+      "tags": [
+        "ai-equity",
+        "digital-divide",
+        "ai-governance",
+        "responsible-ai",
+        "ai-access",
+        "public-ai"
+      ],
+      "source_folder": "klowden-tao-ai-mathematics",
+      "type": "article"
+    },
+    {
+      "id": "klowden-tao-ai-mathematics/autoformalization",
+      "title": "Autoformalization",
+      "file": "wiki/klowden-tao-ai-mathematics/autoformalization.md",
+      "tags": [
+        "autoformalization",
+        "lean",
+        "mathlib",
+        "formal-verification",
+        "ai-mathematics",
+        "proof-assistants"
+      ],
+      "source_folder": "klowden-tao-ai-mathematics",
+      "type": "article"
+    },
+    {
+      "id": "klowden-tao-ai-mathematics/blue-team-red-team-ai",
+      "title": "Blue Team / Red Team AI",
+      "file": "wiki/klowden-tao-ai-mathematics/blue-team-red-team-ai.md",
+      "tags": [
+        "ai-workflows",
+        "human-ai-interface",
+        "verification",
+        "generation",
+        "ai-safety",
+        "responsible-ai"
+      ],
+      "source_folder": "klowden-tao-ai-mathematics",
+      "type": "article"
+    },
+    {
+      "id": "klowden-tao-ai-mathematics/copernican-view-of-ai",
+      "title": "Copernican View of AI",
+      "file": "wiki/klowden-tao-ai-mathematics/copernican-view-of-ai.md",
+      "tags": [
+        "ai-philosophy",
+        "human-ai-interface",
+        "cognition",
+        "copernican-principle",
+        "ai-governance"
+      ],
+      "source_folder": "klowden-tao-ai-mathematics",
+      "type": "article"
+    },
+    {
+      "id": "klowden-tao-ai-mathematics/faustian-bargain-of-ai",
+      "title": "Faustian Bargain of AI",
+      "file": "wiki/klowden-tao-ai-mathematics/faustian-bargain-of-ai.md",
+      "tags": [
+        "ai-ethics",
+        "responsible-ai",
+        "ai-costs",
+        "societal-impact",
+        "ai-governance"
+      ],
+      "source_folder": "klowden-tao-ai-mathematics",
+      "type": "article"
+    },
+    {
+      "id": "klowden-tao-ai-mathematics/mathematical-smell-test",
+      "title": "Mathematical Smell Test",
+      "file": "wiki/klowden-tao-ai-mathematics/mathematical-smell-test.md",
+      "tags": [
+        "mathematical-reasoning",
+        "heuristics",
+        "ai-mathematics",
+        "proof-review",
+        "tacit-knowledge"
+      ],
+      "source_folder": "klowden-tao-ai-mathematics",
+      "type": "article"
+    },
+    {
+      "id": "klowden-tao-ai-mathematics/summary-klowden-tao-ai-mathematics",
+      "title": "Source Summary: Mathematical Methods and Human Thought in the Age of AI",
+      "file": "wiki/klowden-tao-ai-mathematics/summary-klowden-tao-ai-mathematics.md",
+      "tags": [],
+      "source_folder": "klowden-tao-ai-mathematics",
+      "type": "summary"
+    },
+    {
       "id": "naur-programming-as-theory-building/metaphor-driven-design",
       "title": "Metaphor-Driven Design",
       "file": "wiki/naur-programming-as-theory-building/metaphor-driven-design.md",
@@ -2041,6 +2166,146 @@
     {
       "source": "ietf-draft-narajala-ans/maestro-threat-framework",
       "target": "ietf-draft-narajala-ans/summary-ietf-draft-narajala-ans",
+      "type": "source"
+    },
+    {
+      "source": "klowden-tao-ai-mathematics/ai-and-mathematical-proof",
+      "target": "klowden-tao-ai-mathematics/autoformalization",
+      "type": "related"
+    },
+    {
+      "source": "klowden-tao-ai-mathematics/ai-and-mathematical-proof",
+      "target": "klowden-tao-ai-mathematics/mathematical-smell-test",
+      "type": "related"
+    },
+    {
+      "source": "klowden-tao-ai-mathematics/ai-and-mathematical-proof",
+      "target": "klowden-tao-ai-mathematics/blue-team-red-team-ai",
+      "type": "related"
+    },
+    {
+      "source": "klowden-tao-ai-mathematics/ai-and-mathematical-proof",
+      "target": "klowden-tao-ai-mathematics/summary-klowden-tao-ai-mathematics",
+      "type": "source"
+    },
+    {
+      "source": "klowden-tao-ai-mathematics/ai-citogenesis",
+      "target": "klowden-tao-ai-mathematics/faustian-bargain-of-ai",
+      "type": "related"
+    },
+    {
+      "source": "klowden-tao-ai-mathematics/ai-citogenesis",
+      "target": "klowden-tao-ai-mathematics/ai-and-mathematical-proof",
+      "type": "related"
+    },
+    {
+      "source": "klowden-tao-ai-mathematics/ai-citogenesis",
+      "target": "klowden-tao-ai-mathematics/summary-klowden-tao-ai-mathematics",
+      "type": "source"
+    },
+    {
+      "source": "klowden-tao-ai-mathematics/ai-digital-divide",
+      "target": "klowden-tao-ai-mathematics/faustian-bargain-of-ai",
+      "type": "related"
+    },
+    {
+      "source": "klowden-tao-ai-mathematics/ai-digital-divide",
+      "target": "klowden-tao-ai-mathematics/copernican-view-of-ai",
+      "type": "related"
+    },
+    {
+      "source": "klowden-tao-ai-mathematics/ai-digital-divide",
+      "target": "klowden-tao-ai-mathematics/summary-klowden-tao-ai-mathematics",
+      "type": "source"
+    },
+    {
+      "source": "klowden-tao-ai-mathematics/autoformalization",
+      "target": "klowden-tao-ai-mathematics/ai-and-mathematical-proof",
+      "type": "related"
+    },
+    {
+      "source": "klowden-tao-ai-mathematics/autoformalization",
+      "target": "klowden-tao-ai-mathematics/mathematical-smell-test",
+      "type": "related"
+    },
+    {
+      "source": "klowden-tao-ai-mathematics/autoformalization",
+      "target": "klowden-tao-ai-mathematics/summary-klowden-tao-ai-mathematics",
+      "type": "source"
+    },
+    {
+      "source": "klowden-tao-ai-mathematics/blue-team-red-team-ai",
+      "target": "klowden-tao-ai-mathematics/faustian-bargain-of-ai",
+      "type": "related"
+    },
+    {
+      "source": "klowden-tao-ai-mathematics/blue-team-red-team-ai",
+      "target": "klowden-tao-ai-mathematics/ai-and-mathematical-proof",
+      "type": "related"
+    },
+    {
+      "source": "klowden-tao-ai-mathematics/blue-team-red-team-ai",
+      "target": "klowden-tao-ai-mathematics/copernican-view-of-ai",
+      "type": "related"
+    },
+    {
+      "source": "klowden-tao-ai-mathematics/blue-team-red-team-ai",
+      "target": "klowden-tao-ai-mathematics/summary-klowden-tao-ai-mathematics",
+      "type": "source"
+    },
+    {
+      "source": "klowden-tao-ai-mathematics/copernican-view-of-ai",
+      "target": "klowden-tao-ai-mathematics/blue-team-red-team-ai",
+      "type": "related"
+    },
+    {
+      "source": "klowden-tao-ai-mathematics/copernican-view-of-ai",
+      "target": "klowden-tao-ai-mathematics/faustian-bargain-of-ai",
+      "type": "related"
+    },
+    {
+      "source": "klowden-tao-ai-mathematics/copernican-view-of-ai",
+      "target": "klowden-tao-ai-mathematics/ai-and-mathematical-proof",
+      "type": "related"
+    },
+    {
+      "source": "klowden-tao-ai-mathematics/copernican-view-of-ai",
+      "target": "klowden-tao-ai-mathematics/summary-klowden-tao-ai-mathematics",
+      "type": "source"
+    },
+    {
+      "source": "klowden-tao-ai-mathematics/faustian-bargain-of-ai",
+      "target": "klowden-tao-ai-mathematics/blue-team-red-team-ai",
+      "type": "related"
+    },
+    {
+      "source": "klowden-tao-ai-mathematics/faustian-bargain-of-ai",
+      "target": "klowden-tao-ai-mathematics/ai-digital-divide",
+      "type": "related"
+    },
+    {
+      "source": "klowden-tao-ai-mathematics/faustian-bargain-of-ai",
+      "target": "klowden-tao-ai-mathematics/ai-citogenesis",
+      "type": "related"
+    },
+    {
+      "source": "klowden-tao-ai-mathematics/faustian-bargain-of-ai",
+      "target": "klowden-tao-ai-mathematics/summary-klowden-tao-ai-mathematics",
+      "type": "source"
+    },
+    {
+      "source": "klowden-tao-ai-mathematics/mathematical-smell-test",
+      "target": "klowden-tao-ai-mathematics/ai-and-mathematical-proof",
+      "type": "related"
+    },
+    {
+      "source": "klowden-tao-ai-mathematics/mathematical-smell-test",
+      "target": "klowden-tao-ai-mathematics/autoformalization",
+      "type": "related"
+    },
+    {
+      "source": "klowden-tao-ai-mathematics/mathematical-smell-test",
+      "target": "klowden-tao-ai-mathematics/summary-klowden-tao-ai-mathematics",
       "type": "source"
     },
     {
