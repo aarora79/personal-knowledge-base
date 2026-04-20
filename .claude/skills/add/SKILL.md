@@ -80,11 +80,14 @@ Naming: `wiki/<source-slug>/summary.md`
 title: "Source Summary: <Source Title>"
 created: YYYY-MM-DD
 source: raw/filename.md
+source_url: <original URL the source was clipped from>
 depth: <100|300|500>
 articles_created: [wiki/article-one.md, wiki/article-two.md, ...]
 ---
 
 # <Source Title> - Summary
+
+> **Original source:** [<Source Title or publication>](<original URL>)
 
 <Summary content written at the chosen depth level>
 
@@ -95,6 +98,11 @@ articles_created: [wiki/article-one.md, wiki/article-two.md, ...]
 - [Article One](article-one.md) - one line description
 - [Article Two](article-two.md) - one line description
 ```
+
+**Important**: Always include a prominent link to the original source at the top of the
+summary (just after the title, before the body). Use the URL that was passed to `/add`
+as the source URL. This makes the summary self-contained -- a reader who wants to go
+back to the original paper, blog post, or video can do so with one click.
 
 ### Depth level guidelines
 

@@ -2,11 +2,14 @@
 title: "Source Summary: Mathematical Methods and Human Thought in the Age of AI"
 created: 2026-04-20
 source: raw/20260420-arxivorg-html-260326524v1.md
+source_url: https://arxiv.org/html/2603.26524v1
 depth: 500
 articles_created: [ai-and-mathematical-proof.md, mathematical-smell-test.md, autoformalization.md, blue-team-red-team-ai.md, faustian-bargain-of-ai.md, ai-digital-divide.md, ai-citogenesis.md, copernican-view-of-ai.md]
 ---
 
 # Mathematical Methods and Human Thought in the Age of AI - Summary
+
+> **Original source:** [Mathematical Methods and Human Thought in the Age of AI (Klowden & Tao, arxiv 2603.26524)](https://arxiv.org/html/2603.26524v1)
 
 This paper (Tanya Klowden and Terence Tao, arxiv 2603.26524, 2026) is a philosophical essay that uses mathematics as a "sandbox" for exploring broader questions about AI's impact on intellectual work, creativity, and society. Klowden and Tao write from an unusual collaboration between mathematics (Tao is a Fields Medal winner) and the humanities (Klowden studies art), arguing that their disparate domains face structurally similar challenges from the rapid deployment of AI into professional workflows. The essay is not a technical paper but rather a call to develop values-driven frameworks for human-AI coexistence before the opportunity to shape these tools passes.
 
