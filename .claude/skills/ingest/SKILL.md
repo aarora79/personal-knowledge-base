@@ -46,7 +46,15 @@ Run `uv run python build_graph.py` to regenerate `wiki/graph.json` from article 
 
 Then update the graph screenshot: `uv run python screenshot_graph.py`
 
-## Step 5: Update index and log
+## Step 5: Update index, log and inbox
+
+0. Update `inbox.md` for every source processed in this run:
+   - Set `clipped` to yes and `wiki` to `<source-slug>` in the **Processed** table, adding
+     the row if it is missing
+   - Remove the link from **Unprocessed** if it was sitting there
+   - If `analyses/` already covers the same paper, fill the `analysis` column and add a
+     line to the source summary pointing at `analyses/<slug>/analysis.md`
+   - Leave the `analysis` and `explainer` columns alone otherwise
 
 1. Update `wiki/index.md`:
    - Add new articles under the appropriate category with clickable markdown links

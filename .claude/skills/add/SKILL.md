@@ -67,6 +67,23 @@ Read the full raw file that was just created. Then:
     - Updated: <list of updated wiki articles>
     ```
 
+## Phase 3: Update the inbox
+
+`inbox.md` is the single place that answers "what have I done with this link". Keep it true
+or it stops being worth reading.
+
+1. Find the row for this source in the **Processed** table, or add one if the link came in
+   through **Unprocessed**.
+2. Set the `clipped` column to yes and the `wiki` column to `<source-slug>`.
+3. If the link was sitting under **Unprocessed**, remove it from there. A link lives in
+   exactly one of the two sections, never both.
+4. Check `analyses/` for a folder covering the same paper. If one exists, fill the
+   `analysis` column and add a line to the source summary pointing at
+   `analyses/<slug>/analysis.md`, so the two views of the paper can find each other.
+
+Leave the `analysis` and `explainer` columns alone otherwise. Those are separate products
+this skill does not produce.
+
 ## Source Summary format
 
 For each raw source, create `wiki/<source-slug>/summary.md`. The depth level controls
@@ -215,4 +232,6 @@ tag-based search. The visual graph is viewable at `wiki/graph.html`.
 - Keep article summaries between 200-500 words
 - Summary length varies by depth level (100: 300-600, 300: 500-800, 500: 800-1200)
 - Concepts mentioned 3+ times across articles should get their own article
-- Always update the index and changelog when done
+- Always update the index, changelog and inbox when done
+- `analyses/` is not part of the wiki. Never treat an analysis as a source, and never
+  rewrite one into wiki articles. Only `raw/` files are sources.

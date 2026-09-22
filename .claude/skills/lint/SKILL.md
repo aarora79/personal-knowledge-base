@@ -59,6 +59,34 @@ NO SOURCE: wiki/<source-slug>/<file>.md has no sources listed
 MISSING SOURCE: wiki/<source-slug>/<file>.md references raw/<file>.md which does not exist
 ```
 
+## Check 5b: Inbox drift
+
+A stale `inbox.md` is how the same paper gets written up twice by two different passes, so
+check it against what is actually on disk.
+
+For every folder in `wiki/` and every folder in `analyses/`, confirm `inbox.md` has a row
+whose columns match reality. Also confirm no link appears in both **Processed** and
+**Unprocessed**.
+
+Report:
+```
+INBOX MISSING: wiki/<source-slug>/ exists but has no row in inbox.md
+INBOX MISSING: analyses/<slug>/ exists but has no row in inbox.md
+INBOX STALE: inbox.md says <slug> has no wiki coverage, but wiki/<source-slug>/ exists
+INBOX STALE: inbox.md says <slug> has no analysis, but analyses/<slug>/ exists
+INBOX DUPLICATE: <url> appears under both Processed and Unprocessed
+```
+
+## Check 5c: Papers covered twice
+
+Flag any paper holding both an analysis and a wiki folder. This is allowed and four already
+do, but it should be a deliberate choice rather than a surprise.
+
+Report:
+```
+DOUBLE COVERAGE: analyses/<slug>/ and wiki/<source-slug>/ both cover <paper>
+```
+
 ## Check 6: Folder structure
 
 Check that each source folder in `wiki/` contains:
