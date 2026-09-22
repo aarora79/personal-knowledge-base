@@ -1,0 +1,13 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(./clip.sh *)",
+      "Bash(uv run markitdown *)",
+      "Bash(uv run trafilatura *)",
+      "Bash(uv run python build_graph.py)",
+      "Bash(uv run python -m py_compile *)",
+      "Bash(mkdir -p *)",
+      "Bash(mv *)"
+    ]
+  }
+}

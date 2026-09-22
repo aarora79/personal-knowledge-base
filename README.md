@@ -37,7 +37,12 @@ personal-knowledge-base/
 ├── build_graph.py         # Generates wiki/graph.json and wiki/graph.html
 ├── changelog.md           # Log of every ingest/update run
 ├── clip.sh                # URL-to-markdown ingestion script
+├── inbox.md               # Link queue, and what has been done with each
 ├── pyproject.toml         # Python dependencies (trafilatura, markitdown)
+├── analyses/              # One-document Feynman analyses, one folder per paper
+│   └── <slug>/
+│       ├── analysis.md    # 1,200-2,500 words, standalone read
+│       └── prompt.txt     # The prompt that produced it
 ├── docs/
 │   └── img/               # Screenshots and diagrams
 ├── raw/                   # Source documents (append-only, never edit)
@@ -57,6 +62,21 @@ personal-knowledge-base/
         ├── query/         # /query -- search by tags and keywords
         └── lint/          # /lint -- health check for broken links, gaps
 ```
+
+## Four kinds of output
+
+A link does not have to earn the full treatment. These are four separate products, not four rungs of one ladder: a paper can have an analysis and no wiki articles, or wiki articles and no analysis.
+
+| Output | Directory | What it is | Cost |
+|--------|-----------|------------|------|
+| Clip | `raw/` | The fetched source, append-only. Survives link rot. | A minute, `./clip.sh <url>` |
+| Wiki | `wiki/<slug>/` | Atomic articles, 200-500 words each, tagged and cross-linked into the graph. | A few minutes, `/add <url>` |
+| Analysis | `analyses/<slug>/` | One Feynman-technique document, 1,200-2,500 words, read start to finish. | A session, prompt template |
+| Explainer | `explainers/<slug>/` | Publishable HTML page with inline SVG and runnable code. | A real session, `explainer` skill |
+
+[inbox.md](inbox.md) tracks every source against those four columns, so you can see at a glance what has been clipped, distilled, analysed or explained. It is also the queue: paste a link under **Unprocessed** with a date and one line on why it caught your eye, and it will keep for a month without getting lost.
+
+[analyses/](analyses/) holds ten paper analyses that moved here from `my-ai-assets` on 2026-09-22. Four of those papers were also ingested into `wiki/` by a separate pass, so they have two independent write-ups; see [analyses/README.md](analyses/README.md) for which and why that is still open.
 
 ## Adding Content
 

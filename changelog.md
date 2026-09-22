@@ -1,5 +1,19 @@
 # Changelog
 
+## [2026-09-22] restructure | Absorbed paper analyses from my-ai-assets, added an inbox
+- Moved: 10 paper analyses from my-ai-assets/prompts/understand-academic-paper/*/ into analyses/<slug>/
+- Each folder now holds analysis.md (was explanation-*.md or result-*.md) and prompt.txt
+- Renamed one slug to lowercase-kebab: Holistic-Agent-Leaderboard-(HAL) -> holistic-agent-leaderboard-hal
+- Created: analyses/README.md with provenance, per-paper source URL, word count, and wiki/raw coverage
+- Created: inbox.md tracking all 16 sources against four outputs (raw, wiki, analysis, explainer)
+- Moved: the reading queue (urls.txt) here from my-ai-assets, where clip.sh could not reach it
+- Updated: README.md with the four-outputs table and the new directories
+- Updated: CLAUDE.md so the librarian does not mistake an analysis for a source or a wiki article
+- Open: 4 of the 10 papers also have wiki/ folders from a separate ingest pass, so they carry
+  two independent write-ups (HAL, SATLUTION, agent-first data systems, Coase). Both kept
+  pending a per-paper decision. See analyses/README.md.
+- Note: 6 of the 10 have no raw/ entry, so they were never clipped. /add <url> would fix that.
+
 ## [2026-04-20] ingest | Klowden & Tao: Mathematical Methods and Human Thought in the Age of AI
 - Processed: raw/20260420-arxivorg-html-260326524v1.md
 - Folder: wiki/klowden-tao-ai-mathematics/

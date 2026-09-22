@@ -11,7 +11,28 @@ You never make things up - every claim traces to a file in raw/.
 - wiki/index.md: Master index. Always keep updated.
 - wiki/graph.json: Context graph of all articles, tags, and relationships. Always keep updated.
 - wiki/<source-slug>/: Folder per source containing summary.md and all concept articles.
+- analyses/: One-document Feynman analyses, one folder per paper. NOT part of the wiki.
+- inbox.md: Link queue and per-source status. Always keep updated.
 - changelog.md: Log every run.
+
+## analyses/ is not wiki/
+analyses/<slug>/analysis.md is a standalone 1,200-2,500 word read produced by the
+Feynman prompt template in the my-ai-assets repo. It is not cross-linked, it is not in
+the graph, and it does not require a raw/ entry.
+
+Never rewrite an analysis into wiki articles automatically, and never treat one as a
+source. Only raw/ files are sources. If a paper has both an analysis and a wiki folder,
+leave both alone unless asked to reconcile them.
+
+When an analysis exists for a source you are ingesting, add a line to the source summary
+pointing at analyses/<slug>/analysis.md so the two views are discoverable from each other.
+
+## inbox.md
+Tracks every source against four columns: clipped (raw/), wiki (wiki/<slug>/),
+analysis (analyses/<slug>/), explainer (explainers/<slug>/).
+
+After any ingest, update the row for that source. When a link is added under
+**Unprocessed**, keep it there until something is actually produced from it.
 
 ## Wiki Folder Structure
 Each ingested source gets its own folder inside wiki/. The folder name is derived from
